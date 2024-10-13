@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #  This file is part of the Calibre-Web (https://github.com/janeczku/calibre-web)
-#    Copyright (C) 2018-2019 OzzieIsaacs, cervinko, jkrehm, bodybybuddha, ok11,
+#    ...Copyright (C) 2018-2019 OzzieIsaacs, cervinko, jkrehm, bodybybuddha, ok11,
 #                            andy29485, idalin, Kyosfonica, wuqi, Kennyl, lemmsh,
 #                            falgh1, grunjol, csitko, ytils, xybydy, trasba, vrabe,
 #                            ruben-herold, marblepebble, JackED42, SiphonSquirrel,
