@@ -504,32 +504,35 @@ def edit_list_user(param):
                                                      'message': _("No admin user remaining, can't remove admin role",
                                                                   nick=user.name)}]), mimetype='application/json')
                             user.role &= ~value  # Remove the role if 'false'.
+                         user.role &= ~value  # Remove the role if 'false'.
                         else:
-                            raise Exception(_("Value has to be true or false"))
+                            raise Exception(_("Value has to be true or false"))  # Raise an error if an invalid value is passed.
                     else:
-                        raise Exception(_("Invalid role"))
+                        raise Exception(_("Invalid role"))  # Raise an error for invalid role values.
                 elif param.startswith('sidebar'):
-                    value = int(vals['field_index'])
+                    value = int(vals['field_index'])  # Get the sidebar view index.
                     if user.name == "Guest" and value == constants.SIDEBAR_READ_AND_UNREAD:
-                        raise Exception(_("Guest can't have this view"))
-                    # check for valid value, last on checks for power of 2 value
+                        raise Exception(_("Guest can't have this view"))  # Prevent certain views for 'Guest'.
+                    
+                    # Ensure the sidebar view is valid and a power of 2.
                     if value > 0 and value <= constants.SIDEBAR_LIST and (value & value - 1 == 0 or value == 1):
                         if vals['value'] == 'true':
-                            user.sidebar_view |= value
+                            user.sidebar_view |= value  # Add the sidebar view if 'true'.
                         elif vals['value'] == 'false':
-                            user.sidebar_view &= ~value
+                            user.sidebar_view &= ~value  # Remove the sidebar view if 'false'.
                         else:
-                            raise Exception(_("Value has to be true or false"))
+                            raise Exception(_("Value has to be true or false"))  # Raise an error for invalid value.
                     else:
-                        raise Exception(_("Invalid view"))
+                        raise Exception(_("Invalid view"))  # Raise an error for invalid view values.
                 elif param == 'locale':
                     if user.name == "Guest":
-                        raise Exception(_("Guest's Locale is determined automatically and can't be set"))
+                        raise Exception(_("Guest's Locale is determined automatically and can't be set"))  # Prevent setting locale for 'Guest'.
                     if vals['value'] in get_available_translations():
-                        user.locale = vals['value']
+                        user.locale = vals['value']  # Set the locale if it's valid.
                     else:
-                        raise Exception(_("No Valid Locale Given"))
+                        raise Exception(_("No Valid Locale Given"))  # Raise an error for invalid locale.
                 elif param == 'default_language':
+                    # Fetch valid languages and ensure the provided language is valid.
                     languages = calibre_db.session.query(db.Languages) \
                         .join(db.books_languages_link) \
                         .join(db.Books) \
@@ -537,17 +540,19 @@ def edit_list_user(param):
                         .group_by(text('books_languages_link.lang_code')).all()
                     lang_codes = [lang.lang_code for lang in languages] + ["all"]
                     if vals['value'] in lang_codes:
-                        user.default_language = vals['value']
+                        user.default_language = vals['value']  # Set the default language if valid.
                     else:
-                        raise Exception(_("No Valid Book Language Given"))
+                        raise Exception(_("No Valid Book Language Given"))  # Raise an error for invalid language.
                 else:
-                    return _("Parameter not found"), 400
+                    return _("Parameter not found"), 400  # Return error if the parameter is not recognized.
+
+        # Catch and log any exceptions that occur during the process.
         except Exception as ex:
             log.error_or_exception(ex)
-            return str(ex), 400
-    ub.session_commit()
-    return ""
+            return str(ex), 400  # Return the error message.
 
+    ub.session_commit()  # Commit the changes to the database.
+    return ""  # Return an empty response upon success.
 
 @admi.route("/ajax/user_table_settings", methods=['POST'])
 @user_login_required
