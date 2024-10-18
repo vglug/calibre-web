@@ -1,4 +1,4 @@
-# Calibre-Web
+# GetMyEbook-Web
 
 Calibre-Web is a web app that offers a clean and intuitive interface for browsing, reading, and downloading eBooks using a valid [Calibre](https://calibre-ebook.com) database.
 
@@ -12,7 +12,7 @@ Calibre-Web is a web app that offers a clean and intuitive interface for browsin
 <details>
 <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-1. [About](#calibre-web)
+1. [About](#GetMyEbook-web)
 2. [Features](#features)
 3. [Installation](#installation)
    - [Installation via pip (recommended)](#installation-via-pip-recommended)
@@ -59,7 +59,7 @@ Calibre-Web is a web app that offers a clean and intuitive interface for browsin
 
 #### Installation via pip (recommended)
 1. Create a virtual environment for Calibre-Web to avoid conflicts with existing Python dependencies
-2. Install Calibre-Web via pip: `pip install calibreweb` (or `pip3` depending on your OS/distro)
+2. Install GetMyEbook-Web via pip: `pip install calibreweb` (or `pip3` depending on your OS/distro)
 3. Install optional features via pip as needed, see [this page](https://github.com/janeczku/calibre-web/wiki/Dependencies-in-Calibre-Web-Linux-and-Windows) for details
 4. Start Calibre-Web by typing `cps`
 
@@ -74,7 +74,7 @@ Refer to the Wiki for additional installation examples: [manual installation](ht
 3. If you don't have a Calibre database, you can use [this database](https://github.com/janeczku/calibre-web/raw/master/library/metadata.db) (move it out of the Calibre-Web folder to prevent overwriting during updates)
 4. Set `Location of Calibre database` to the path of the folder containing your Calibre library (metadata.db) and click "Save"
 5. Optionally, use Google Drive to host your Calibre library by following the [Google Drive integration guide](https://github.com/janeczku/calibre-web/wiki/G-Drive-Setup#using-google-drive-integration)
-6. Configure your Calibre-Web instance via the admin page, referring to the [Basic Configuration](https://github.com/janeczku/calibre-web/wiki/Configuration#basic-configuration) and [UI Configuration](https://github.com/janeczku/calibre-web/wiki/Configuration#ui-configuration) guides
+6. Configure your GetMyEbook-Web instance via the admin page, referring to the [Basic Configuration](https://github.com/janeczku/calibre-web/wiki/Configuration#basic-configuration) and [UI Configuration](https://github.com/janeczku/calibre-web/wiki/Configuration#ui-configuration) guides
 
 #### Default Admin Login:
 - **Username:** admin
