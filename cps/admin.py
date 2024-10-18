@@ -435,67 +435,75 @@ def table_get_default_lang():
         ret.append({'value': lang.lang_code, 'text': lang.name})
     return json.dumps(ret)
 
-
+# Define a route that accepts POST requests with a parameter 'param'.
 @admi.route("/ajax/editlistusers/<param>", methods=['POST'])
-@user_login_required
-@admin_required
+@user_login_required       # Ensures the user is logged in before accessing this route.
+@admin_required            # Ensures only admins can access this route.
+# Define the function that handles user editing.
 def edit_list_user(param):
-    vals = request.form.to_dict(flat=False)
-    all_user = ub.session.query(ub.User)
+    vals = request.form.to_dict(flat=False)  # Parse the form data into a dictionary.
+    all_user = ub.session.query(ub.User)  # Query all users from the database.
+
+    # If anonymous browsing is disabled, filter out anonymous users.
     if not config.config_anonbrowse:
         all_user = all_user.filter(ub.User.role.op('&')(constants.ROLE_ANONYMOUS) != constants.ROLE_ANONYMOUS)
-    # only one user is posted
+
+    # Check if only one user is posted by 'pk' or a list of users via 'pk[]'.
     if "pk" in vals:
-        users = [all_user.filter(ub.User.id == vals['pk'][0]).one_or_none()]
+        users = [all_user.filter(ub.User.id == vals['pk'][0]).one_or_none()]  # Filter and fetch one user by 'pk'.
     else:
-        if "pk[]" in vals:
+        if "pk[]" in vals:  # If 'pk[]' is present, fetch users by the list of ids.
             users = all_user.filter(ub.User.id.in_(vals['pk[]'])).all()
         else:
-            return _("Malformed request"), 400
+            return _("Malformed request"), 400  # Return error if no valid 'pk' is found.
+
+    # Ensure 'field_index' and 'value' are single values instead of lists.
     if 'field_index' in vals:
         vals['field_index'] = vals['field_index'][0]
     if 'value' in vals:
         vals['value'] = vals['value'][0]
     elif not ('value[]' in vals):
-        return _("Malformed request"), 400
+        return _("Malformed request"), 400  # Return error if 'value' is missing.
+
+    # Iterate through the list of users and modify each one based on 'param'.
     for user in users:
         try:
-            if param in ['denied_tags', 'allowed_tags', 'allowed_column_value', 'denied_column_value']:
-                if 'value[]' in vals:
+            if param in ['denied_tags', 'allowed_tags', 'allowed_column_value', 'denied_column_value']:  # Check if the 'param' deals with tags.
+                if 'value[]' in vals:  # If multiple values are passed, prepare tags accordingly.
                     setattr(user, param, prepare_tags(user, vals['action'][0], param, vals['value[]']))
                 else:
-                    setattr(user, param, strip_whitespaces(vals['value']))
+                    setattr(user, param, strip_whitespaces(vals['value']))  # Set a single value for the parameter.
             else:
-                vals['value'] = strip_whitespaces(vals['value'])
+                vals['value'] = strip_whitespaces(vals['value'])  # Remove any extra whitespaces from the value.
                 if param == 'name':
-                    if user.name == "Guest":
+                    if user.name == "Guest":  # Prevent changing the name of the 'Guest' user.
                         raise Exception(_("Guest Name can't be changed"))
-                    user.name = check_username(vals['value'])
+                    user.name = check_username(vals['value'])  # Set the new username after validation.
                 elif param == 'email':
-                    user.email = check_email(vals['value'])
+                    user.email = check_email(vals['value'])  # Set the new email after validation.
                 elif param == 'kobo_only_shelves_sync':
-                    user.kobo_only_shelves_sync = int(vals['value'] == 'true')
+                    user.kobo_only_shelves_sync = int(vals['value'] == 'true')  # Set sync preferences for Kobo.
                 elif param == 'kindle_mail':
-                    user.kindle_mail = valid_email(vals['value']) if vals['value'] else ""
+                    user.kindle_mail = valid_email(vals['value']) if vals['value'] else ""  # Validate Kindle mail if present.
                 elif param.endswith('role'):
-                    value = int(vals['field_index'])
-                    if user.name == "Guest" and value in \
-                      [constants.ROLE_ADMIN, constants.ROLE_PASSWD, constants.ROLE_EDIT_SHELFS]:
-                        raise Exception(_("Guest can't have this role"))
-                    # check for valid value, last on checks for power of 2 value
+                    value = int(vals['field_index'])  # Get the role index for the user.
+                    if user.name == "Guest" and value in [constants.ROLE_ADMIN, constants.ROLE_PASSWD, constants.ROLE_EDIT_SHELFS]:
+                        raise Exception(_("Guest can't have this role"))  # Prevent assigning certain roles to 'Guest'.
+                    
+                    # Ensure the role is valid and a power of 2.
                     if value > 0 and value <= constants.ROLE_VIEWER and (value & value - 1 == 0 or value == 1):
                         if vals['value'] == 'true':
-                            user.role |= value
+                            user.role |= value  # Add the role if 'true'.
                         elif vals['value'] == 'false':
+                            # Prevent removing the last admin role.
                             if value == constants.ROLE_ADMIN:
-                                if not ub.session.query(ub.User). \
-                                    filter(ub.User.role.op('&')(constants.ROLE_ADMIN) == constants.ROLE_ADMIN,
-                                           ub.User.id != user.id).count():
+                                if not ub.session.query(ub.User).filter(ub.User.role.op('&')(constants.ROLE_ADMIN) == constants.ROLE_ADMIN,
+                                                                         ub.User.id != user.id).count():
                                     return Response(
                                         json.dumps([{'type': "danger",
                                                      'message': _("No admin user remaining, can't remove admin role",
                                                                   nick=user.name)}]), mimetype='application/json')
-                            user.role &= ~value
+                            user.role &= ~value  # Remove the role if 'false'.
                         else:
                             raise Exception(_("Value has to be true or false"))
                     else:
