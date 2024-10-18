@@ -570,27 +570,25 @@ def update_table_settings():
         return "Invalid request", 400
     return ""
 
-
 @admi.route("/admin/viewconfig", methods=["POST"])
-@user_login_required
-@admin_required
+@user_login_required  # Ensures the user is logged in
+@admin_required  # Ensures the user has admin privileges
+ # Function to update view configuration
 def update_view_configuration():
-    to_save = request.form.to_dict()
+    to_save = request.form.to_dict()  # Collects form data
 
-    _config_string(to_save, "config_calibre_web_title")
+    _config_string(to_save, "config_calibre_web_title")  # Updates Calibre web title
     _config_string(to_save, "config_columns_to_ignore")
     if _config_string(to_save, "config_title_regex"):
-        calibre_db.create_functions(config)
+        calibre_db.create_functions(config)  # Creates functions if title regex is set
 
-    if not check_valid_read_column(to_save.get("config_read_column", "0")):
+    if not check_valid_read_column(to_save.get("config_read_column", "0")):  # Validates read column
         flash(_("Invalid Read Column"), category="error")
-        log.debug("Invalid Read column")
         return view_configuration()
     _config_int(to_save, "config_read_column")
 
-    if not check_valid_restricted_column(to_save.get("config_restricted_column", "0")):
+    if not check_valid_restricted_column(to_save.get("config_restricted_column", "0")):  # Validates restricted column
         flash(_("Invalid Restricted Column"), category="error")
-        log.debug("Invalid Restricted Column")
         return view_configuration()
     _config_int(to_save, "config_restricted_column")
 
