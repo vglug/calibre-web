@@ -577,7 +577,7 @@ def update_table_settings():
 def update_view_configuration():
     to_save = request.form.to_dict()  # Collects form data
 
-    _config_string(to_save, "config_calibre_web_title")  # Updates Calibre web title
+    _config_string(to_save, "config_calibre_web_title")  # Updates Calibre web title 
     _config_string(to_save, "config_columns_to_ignore")
     if _config_string(to_save, "config_title_regex"):
         calibre_db.create_functions(config)  # Creates functions if title regex is set
@@ -592,26 +592,25 @@ def update_view_configuration():
         return view_configuration()
     _config_int(to_save, "config_restricted_column")
 
-    _config_int(to_save, "config_theme")
+    _config_int(to_save, "config_theme")  # Updates theme configuration
     _config_int(to_save, "config_random_books")
     _config_int(to_save, "config_books_per_page")
     _config_int(to_save, "config_authors_max")
     _config_string(to_save, "config_default_language")
     _config_string(to_save, "config_default_locale")
 
-    config.config_default_role = constants.selected_roles(to_save)
-    config.config_default_role &= ~constants.ROLE_ANONYMOUS
+    config.config_default_role = constants.selected_roles(to_save)  # Sets default roles
+    config.config_default_role &= ~constants.ROLE_ANONYMOUS  # Removes anonymous role
 
-    config.config_default_show = sum(int(k[5:]) for k in to_save if k.startswith('show_'))
+    config.config_default_show = sum(int(k[5:]) for k in to_save if k.startswith('show_'))  # Updates default view settings
     if "Show_detail_random" in to_save:
-        config.config_default_show |= constants.DETAIL_RANDOM
+        config.config_default_show |= constants.DETAIL_RANDOM  # Enables random detail if selected
 
-    config.save()
+    config.save()  # Saves updated configuration
     flash(_("Calibre-Web configuration updated"), category="success")
-    log.debug("Calibre-Web configuration updated")
     before_request()
 
-    return view_configuration()
+    return view_configuration()  # Reloads configuration page
 
 
 @admi.route("/ajax/loaddialogtexts/<element_id>", methods=['POST'])
