@@ -8,7 +8,7 @@ First of all, we would like to thank you for reading this text. We are happy you
 
 **Calibre-Web** is not **Calibre**. If you are having a question regarding Calibre please post this at their [repository](https://github.com/kovidgoyal/calibre).
 
-**Docker-Containers** of Calibre-Web are maintained by different persons than the people who drive Calibre-Web. If we come to the conclusion during our analysis that the problem is related to Docker, we might ask you to open a new issue at the repository of the Docker Container.
+**Docker-Containers** of Gey My Ebooks Web are maintained by different persons than the people who drive Calibre-Web. If we come to the conclusion during our analysis that the problem is related to Docker, we might ask you to open a new issue at the repository of the Docker Container.
 
 If you are having **Basic Installation Problems** with python or its dependencies, please consider using your favorite search engine to find a solution. In case you can't find a solution, we are happy to help you.
 
