@@ -1098,14 +1098,52 @@ def pathchooser():
 
 
 def _config_int(to_save, x, func=int):
+     """
+    Save an integer configuration value.
+
+    Parameters:
+    - to_save: The configuration dictionary where the value will be saved.
+    - x: The key or path in the dictionary to store the integer value.
+    - func: A function to convert the value (default is int).
+
+    Returns:
+    - Result of setting the value in the configuration.
+    """
+    
+    # Use the provided function (default is int) to convert the value
+    # and save it in the configuration dictionary.
     return config.set_from_dictionary(to_save, x, func)
 
 
-def _config_checkbox(to_save, x):
+def _config_checkbox(to_save, x):"""
+    Save a checkbox configuration value as a boolean.
+
+    Parameters:
+    - to_save: The configuration dictionary where the value will be saved.
+    - x: The key or path in the dictionary to store the boolean value.
+
+    Returns:
+    - Result of setting the boolean value in the configuration.
+    """
+    
+    # Convert the value from the dictionary to a boolean based on the string "on"
+    
     return config.set_from_dictionary(to_save, x, lambda y: y == "on", False)
 
 
 def _config_checkbox_int(to_save, x):
+     """
+    Save a checkbox configuration value as an integer (0 or 1).
+
+    Parameters:
+    - to_save: The configuration dictionary where the value will be saved.
+    - x: The key or path in the dictionary to store the integer value.
+
+    Returns:
+    - Result of setting the integer value in the configuration.
+    """
+    
+    # Convert the value from the dictionary to an integer: 1 if "on", otherwise 0
     return config.set_from_dictionary(to_save, x, lambda y: 1 if (y == "on") else 0, 0)
 
 
