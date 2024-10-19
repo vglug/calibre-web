@@ -875,29 +875,45 @@ def delete_restriction(res_type, user_id):
 @admi.route("/ajax/listrestriction/<int:res_type>/<int:user_id>")
 @user_login_required
 @admin_required
+#This is used to collect the list_restriction function
 def list_restriction(res_type, user_id):
-    if res_type == 0:  # Tags as template
+    # This function generates a JSON response based on restrictions and allowed elements.
+    # It takes two parameters: 
+    # - res_type: Determines the type of restriction (e.g., tags, columns).
+    # - user_id: The ID of the user to retrieve the data (used for user-specific restrictions).
+
+    
+    if res_type == 0:   # Tags as template
+        # If the resource type is 0, list denied and allowed tags globally from the config.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(config.list_denied_tags()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(config.list_allowed_tags()) if x != '']
-        json_dumps = restrict + allow
+        json_dumps = restrict + allow # Combine allowed and denied tags into a single list
+        
+        
     elif res_type == 1:  # CustomC as template
+        # If resource type is 1, list denied and allowed custom column values.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(config.list_denied_column_values()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(config.list_allowed_column_values()) if x != '']
         json_dumps = restrict + allow
+        
+        
     elif res_type == 2:  # Tags per user
+        # If resource type is 2, list denied and allowed tags specific to the user.
         if isinstance(user_id, int):
-            usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first()
+            usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first() # Query user by ID.
         else:
-            usr = current_user
+            usr = current_user # If no user_id, get the current logged-in user.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(usr.list_denied_tags()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(usr.list_allowed_tags()) if x != '']
         json_dumps = restrict + allow
+        
+        
     elif res_type == 3:  # CustomC per user
         if isinstance(user_id, int):
             usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first()
