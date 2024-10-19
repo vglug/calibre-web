@@ -12,7 +12,7 @@ First of all, we would like to thank you for reading this text. We are happy you
 
 If you are having **Basic Installation Problems** with python or its dependencies, please consider using your favorite search engine to find a solution. In case you can't find a solution, we are happy to help you.
 
-We can offer only very limited support regarding configuration of **Reverse-Proxy Installations**, **OPDS-Reader** or other programs in combination with Calibre-Web.
+We can offer only very limited support regarding configuration of **Reverse-Proxy Installations**, **OPDS-Reader** or other programs in combination with Get My Ebooks Web.
 
 ### **Translation**
 
