@@ -278,12 +278,17 @@ def calibreweb_alive():
 @user_login_required
 @admin_required
 def view_configuration():
+#Get all boolean columns that are not marked for deletion
     read_column = calibre_db.session.query(db.CustomColumns) \
         .filter(and_(db.CustomColumns.datatype == 'bool', db.CustomColumns.mark_for_delete == 0)).all()
+#Get all text columns that are not marked for deletion
     restrict_columns = calibre_db.session.query(db.CustomColumns) \
         .filter(and_(db.CustomColumns.datatype == 'text', db.CustomColumns.mark_for_delete == 0)).all()
+#Get the list of supported languages
     languages = calibre_db.speaking_language()
+#Get available translations (locales)
     translations = get_available_locale()
+#Render the configuration page with the gathered data
     return render_title_template("config_view_edit.html", conf=config, readColumns=read_column,
                                  restrictColumns=restrict_columns,
                                  languages=languages,
@@ -562,44 +567,52 @@ def update_table_settings():
 @user_login_required
 @admin_required
 def update_view_configuration():
+#Get form data as a dictionary
     to_save = request.form.to_dict()
-
+#Update string configuration values
     _config_string(to_save, "config_calibre_web_title")
     _config_string(to_save, "config_columns_to_ignore")
+#If the title regex is updated, recreate database functions
     if _config_string(to_save, "config_title_regex"):
         calibre_db.create_functions(config)
-
+#Check if the 'Read Column' is valid, show an error if not
     if not check_valid_read_column(to_save.get("config_read_column", "0")):
         flash(_("Invalid Read Column"), category="error")
         log.debug("Invalid Read column")
         return view_configuration()
+#Save the valid 'Read Column' as an integer
     _config_int(to_save, "config_read_column")
-
+#Check if the 'Restricted Column' is valid, show an error if not
     if not check_valid_restricted_column(to_save.get("config_restricted_column", "0")):
         flash(_("Invalid Restricted Column"), category="error")
         log.debug("Invalid Restricted Column")
         return view_configuration()
+#Save the valid 'Restricted Column' as an integer
     _config_int(to_save, "config_restricted_column")
-
+#Update integer configuration options
     _config_int(to_save, "config_theme")
     _config_int(to_save, "config_random_books")
     _config_int(to_save, "config_books_per_page")
     _config_int(to_save, "config_authors_max")
+#Update string settings for default language and locale
     _config_string(to_save, "config_default_language")
     _config_string(to_save, "config_default_locale")
-
+#Set the default role, excluding anonymous users
     config.config_default_role = constants.selected_roles(to_save)
     config.config_default_role &= ~constants.ROLE_ANONYMOUS
-
+#Set which UI elements to show
     config.config_default_show = sum(int(k[5:]) for k in to_save if k.startswith('show_'))
+#Enable the 'Show Detail Random' option if selected
     if "Show_detail_random" in to_save:
         config.config_default_show |= constants.DETAIL_RANDOM
-
+#Save the updated configuration
     config.save()
+#Show success message and log the update
     flash(_("Calibre-Web configuration updated"), category="success")
     log.debug("Calibre-Web configuration updated")
+#Perform any additional setup before returning to the view
     before_request()
-
+#Return to the configuration view
     return view_configuration()
 
 
