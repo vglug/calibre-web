@@ -875,42 +875,65 @@ def delete_restriction(res_type, user_id):
 @admi.route("/ajax/listrestriction/<int:res_type>/<int:user_id>")
 @user_login_required
 @admin_required
+#This is used to collect the list_restriction function
 def list_restriction(res_type, user_id):
-    if res_type == 0:  # Tags as template
+    # This function generates a JSON response based on restrictions and allowed elements.
+    # It takes two parameters: 
+    # - res_type: Determines the type of restriction (e.g., tags, columns).
+    # - user_id: The ID of the user to retrieve the data (used for user-specific restrictions).
+
+    
+    if res_type == 0:   # Tags as template
+        # If the resource type is 0, list denied and allowed tags globally from the config.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(config.list_denied_tags()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(config.list_allowed_tags()) if x != '']
-        json_dumps = restrict + allow
+        json_dumps = restrict + allow # Combine allowed and denied tags into a single list
+        
+        
     elif res_type == 1:  # CustomC as template
+        # If resource type is 1, list denied and allowed custom column values.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(config.list_denied_column_values()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(config.list_allowed_column_values()) if x != '']
         json_dumps = restrict + allow
+        
+        
     elif res_type == 2:  # Tags per user
+        # If resource type is 2, list denied and allowed tags specific to the user.
         if isinstance(user_id, int):
-            usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first()
+            usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first() # Query user by ID.
         else:
-            usr = current_user
+            usr = current_user # If no user_id, get the current logged-in user.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(usr.list_denied_tags()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(usr.list_allowed_tags()) if x != '']
         json_dumps = restrict + allow
+        
+        
     elif res_type == 3:  # CustomC per user
+        # If resource type is 3, list denied and allowed custom column values specific to the user.
         if isinstance(user_id, int):
-            usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first()
+            usr = ub.session.query(ub.User).filter(ub.User.id == user_id).first() # Query user by ID.
         else:
-            usr = current_user
+            usr = current_user  # If no user_id, get the current logged-in user.
         restrict = [{'Element': x, 'type': _('Deny'), 'id': 'd' + str(i)}
                     for i, x in enumerate(usr.list_denied_column_values()) if x != '']
         allow = [{'Element': x, 'type': _('Allow'), 'id': 'a' + str(i)}
                  for i, x in enumerate(usr.list_allowed_column_values()) if x != '']
         json_dumps = restrict + allow
+
+
+        
     else:
-        json_dumps = ""
+        json_dumps = "" # Default to an empty list if no valid res_type.
+
+    # Convert the restriction and allowance data into JSON format.
     js = json.dumps(json_dumps)
+    # Create a response object with the JSON data and set the content type to JSON.
     response = make_response(js)
     response.headers["Content-Type"] = "application/json; charset=utf-8"
     return response
@@ -919,19 +942,40 @@ def list_restriction(res_type, user_id):
 @admi.route("/ajax/fullsync", methods=["POST"])
 @user_login_required
 def ajax_self_fullsync():
-    return do_full_kobo_sync(current_user.id)
+    """
+    Initiates a full synchronization for the current user's Kobo account.
+
+    This function triggers a synchronization process by calling the 
+    do_full_kobo_sync function, passing the current user's ID. It returns 
+    the resulting JSON response from that sync operation.
+    """
+    return do_full_kobo_sync(current_user.id) # Return the JSON response.
 
 
 @admi.route("/ajax/fullsync/<int:userid>", methods=["POST"])
 @user_login_required
 @admin_required
 def ajax_fullsync(userid):
+    """
+    Initiates a full synchronization for the specified user's Kobo account.
+
+    This function triggers the sync process for the Kobo account associated with 
+    the given 'userid' by calling the 'do_full_kobo_sync' function. It returns 
+    the JSON response from that sync operation.
+    
+    Args:
+        userid (int): The ID of the user for whom the sync should be performed.
+    
+    Returns:
+        JSON: The response from the synchronization process.
+    """
+    # Define a new route for the path chooser feature in the admin panel.
     return do_full_kobo_sync(userid)
 
 
 @admi.route("/ajax/pathchooser/")
-@user_login_required
-@admin_required
+@user_login_required # Ensures that the user is logged in before accessing the route.
+@admin_required # Ensures that only users with admin privileges can access this route.
 def ajax_pathchooser():
     return pathchooser()
 
