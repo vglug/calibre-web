@@ -1115,7 +1115,8 @@ def _config_int(to_save, x, func=int):
     return config.set_from_dictionary(to_save, x, func)
 
 
-def _config_checkbox(to_save, x):"""
+def _config_checkbox(to_save, x):
+    """
     Save a checkbox configuration value as a boolean.
 
     Parameters:
