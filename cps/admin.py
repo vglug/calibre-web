@@ -942,6 +942,13 @@ def list_restriction(res_type, user_id):
 @admi.route("/ajax/fullsync", methods=["POST"])
 @user_login_required
 def ajax_self_fullsync():
+    """
+    Initiates a full synchronization for the current user's Kobo account.
+
+    This function triggers a synchronization process by calling the 
+    do_full_kobo_sync function, passing the current user's ID. It returns 
+    the resulting JSON response from that sync operation.
+    """
     return do_full_kobo_sync(current_user.id) # Return the JSON response.
 
 
