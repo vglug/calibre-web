@@ -956,12 +956,26 @@ def ajax_self_fullsync():
 @user_login_required
 @admin_required
 def ajax_fullsync(userid):
+    """
+    Initiates a full synchronization for the specified user's Kobo account.
+
+    This function triggers the sync process for the Kobo account associated with 
+    the given 'userid' by calling the 'do_full_kobo_sync' function. It returns 
+    the JSON response from that sync operation.
+    
+    Args:
+        userid (int): The ID of the user for whom the sync should be performed.
+    
+    Returns:
+        JSON: The response from the synchronization process.
+    """
+    # Define a new route for the path chooser feature in the admin panel.
     return do_full_kobo_sync(userid)
 
 
 @admi.route("/ajax/pathchooser/")
-@user_login_required
-@admin_required
+@user_login_required # Ensures that the user is logged in before accessing the route.
+@admin_required # Ensures that only users with admin privileges can access this route.
 def ajax_pathchooser():
     return pathchooser()
 
