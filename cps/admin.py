@@ -1006,63 +1006,72 @@ def get_drives(current):
 
 
 def pathchooser():
+    # Define the type of browsing (folder or file)
     browse_for = "folder"
+    # Check if only folders should be returned
     folder_only = request.args.get('folder', False) == "true"
+    # Get the file filter and normalize the path
     file_filter = request.args.get('filter', "")
     path = os.path.normpath(request.args.get('path', ""))
 
-    if os.path.isfile(path):
-        old_file = path
-        path = os.path.dirname(path)
+    if os.path.isfile(path): # If the provided path is a file, get its directory
+        old_file = path       # Store the old file path
+        path = os.path.dirname(path)  # Get the directory of the file
     else:
-        old_file = ""
+        old_file = ""    # No old file if the path is not a file
 
-    absolute = False
+    absolute = False      # Flag to check if the path is absolute
 
-    if os.path.isdir(path):
-        cwd = os.path.realpath(path)
-        absolute = True
+    if os.path.isdir(path):    # Check if the given path is a directory
+        cwd = os.path.realpath(path)   # Get the absolute path
+        absolute = True              # Set the absolute flag
     else:
-        cwd = os.getcwd()
-
+        cwd = os.getcwd()           # Use the current working directory if not a valid path
+    # Normalize and resolve the current working directory
     cwd = os.path.normpath(os.path.realpath(cwd))
     parent_dir = os.path.dirname(cwd)
+    # Adjust cwd and parent_dir for relative paths
     if not absolute:
         if os.path.realpath(cwd) == os.path.realpath("/"):
-            cwd = os.path.relpath(cwd)
-        else:
-            cwd = os.path.relpath(cwd) + os.path.sep
-        parent_dir = os.path.relpath(parent_dir) + os.path.sep
+            cwd = os.path.relpath(cwd)     # Convert to relative path if at root
 
-    files = []
+        else:
+            cwd = os.path.relpath(cwd) + os.path.sep   # Append separator
+        parent_dir = os.path.relpath(parent_dir) + os.path.sep # Append separator
+
+    files = []       # Initialize list to store files and directories
+ # Check if we're at the root directory
     if os.path.realpath(cwd) == os.path.realpath("/") \
             or (sys.platform == "win32" and os.path.realpath(cwd)[1:] == os.path.realpath("/")[1:]):
         # we are in root
-        parent_dir = ""
+        parent_dir = ""    # No parent directory at root
         if sys.platform == "win32":
-            files = get_drives(cwd)
+            files = get_drives(cwd)           # Get available drives on Windows
 
+         # Attempt to list directories and files in the current working directory
     try:
         folders = os.listdir(cwd)
     except Exception:
-        folders = []
+        folders = []       # Handle exception gracefully
 
     for f in folders:
         try:
-            sanitized_f = str(Markup.escape(f))
+            sanitized_f = str(Markup.escape(f))      # Sanitize filename for safe HTML
             data = {"name": sanitized_f, "fullpath": os.path.join(cwd, sanitized_f)}
             data["sort"] = data["fullpath"].lower()
         except Exception:
-            continue
+            continue                 # Skip if an error occurs
+
+        # Check if the item is a file
 
         if os.path.isfile(os.path.join(cwd, f)):
             if folder_only:
-                continue
+                continue       # Skip files if only folders are requested
             if file_filter != "" and file_filter != f:
-                continue
-            data["type"] = "file"
+                continue       # Skip if file doesn't match the filter
+            data["type"] = "file"    # Set type to file
             data["size"] = os.path.getsize(os.path.join(cwd, f))
-
+               # Format file size for readability
             power = 0
             while (data["size"] >> 10) > 0.3:
                 power += 1
@@ -1070,22 +1079,22 @@ def pathchooser():
             units = ("", "K", "M", "G", "T")
             data["size"] = str(data["size"]) + " " + units[power] + "Byte"
         else:
-            data["type"] = "dir"
-            data["size"] = ""
+            data["type"] = "dir"        # Set type to directory
+            data["size"] = ""       # No size for directories
 
-        files.append(data)
-
+        files.append(data)    # Add item to the list
+     # Sort files and directories by type and name
     files = sorted(files, key=operator.itemgetter("type", "sort"))
-
+     # Prepare the context for JSON response
     context = {
-        "cwd": cwd,
-        "files": files,
-        "parentdir": parent_dir,
-        "type": browse_for,
-        "oldfile": old_file,
-        "absolute": absolute,
+        "cwd": cwd,            # Current working directory
+        "files": files,         # List of files and directories
+        "parentdir": parent_dir,  # Parent directory
+        "type": browse_for,       # Type of browsing
+        "oldfile": old_file,         # Previously selected file (if any)
+        "absolute": absolute,       # Flag indicating if the path is absolute
     }
-    return json.dumps(context)
+    return json.dumps(context)  # Return the context as a JSON response
 
 
 def _config_int(to_save, x, func=int):
