@@ -1095,12 +1095,14 @@ def _config_int(to_save, x, func=int):
 def _config_checkbox(to_save, x):
     return config.set_from_dictionary(to_save, x, lambda y: y == "on", False)
 
-
+#This function will call dictionary and the string
 def _config_checkbox_int(to_save, x):
+    #Replace on and of or other values to test the behavior
     return config.set_from_dictionary(to_save, x, lambda y: 1 if (y == "on") else 0, 0)
 
-
+ 
 def _config_string(to_save, x):
+    
     return config.set_from_dictionary(to_save, x, lambda y: strip_whitespaces(y) if y else y)
 
 
@@ -1125,7 +1127,7 @@ def _configuration_gdrive_helper(to_save):
                 gdrive_secrets['redirect_uris'][0]
             )
 
-    # always show Google Drive settings, but in case of error deny support
+   
     new_gdrive_value = (not gdrive_error) and ("config_use_google_drive" in to_save)
     if config.config_use_google_drive and not new_gdrive_value:
         config.config_google_drive_watch_changes_response = {}
