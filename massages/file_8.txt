@@ -71,50 +71,50 @@ msgid "File format: %(format)s"
 msgstr ""கோப்பு வடிவம்: (வடிவம்)கள்"
 
 msgid "Category: %(name)s"
-msgstr ""
+msgstr "வகை: %(பெயர்)கள்"
 
 msgid "Language: %(name)s"
-msgstr ""
+msgstr "மொழி: %(பெயர்)கள்"
 
 msgid "Downloads"
-msgstr ""
+msgstr "பதிவிறக்கங்கள்"
 
 msgid "Ratings list"
-msgstr ""
+msgstr "மதிப்பீடுகள் பட்டியல்"
 
 msgid "File formats list"
-msgstr ""
+msgstr "கோப்பு வடிவங்களின் பட்டியல்"
 
 msgid "Please configure the SMTP mail settings first..."
-msgstr ""
+msgstr "முதலில் SMTP அஞ்சல் அமைப்புகளை உள்ளமைக்கவும்"
 
 msgid "Success! Book queued for sending to %(eReadermail)s"
-msgstr ""
+msgstr "வெற்றி! புத்தகம் அனுப்ப வரிசையில் நிற்கிறது %(மின் வாசகர் அஞ்சல்)கள் "
 
 msgid "Oops! There was an error sending book: %(res)s"
-msgstr ""
+msgstr "அச்சச்சோ! புத்தகத்தை அனுப்புவதில் பிழை"
 
 msgid "Oops! Please update your profile with a valid eReader Email."
-msgstr ""
+msgstr "அச்சச்சோ! சரியான மின் வாசகர் மின்னஞ்சலுடன் உங்கள் சுயவிவரத்தைப் புதுப்பிக்கவும்.""
 
 msgid "Please wait one minute to register next user"
-msgstr ""
+msgstr "அடுத்த பயனரை பதிவு செய்ய ஒரு நிமிடம் காத்திருக்கவும்""
 
 msgid "Register"
-msgstr ""
+msgstr "பதிவு"
 
 msgid "Connection error to limiter backend, please contact your administrator"
-msgstr ""
+msgstr "லிமிட்டர் பின்தளத்தில் இணைப்பு பிழை, உங்கள் நிர்வாகியைத் தொடர்பு கொள்ளவும்"
 
 msgid "Oops! Email server is not configured, please contact your administrator."
-msgstr ""
+msgstr "அச்சச்சோ! மின்னஞ்சல் சேவையகம் கட்டமைக்கப்படவில்லை, உங்கள் நிர்வாகியைத் தொடர்பு கொள்ளவும்."
 
 msgid "Oops! Your Email is not allowed."
-msgstr ""
+msgstr "அச்சச்சோ! உங்கள் மின்னஞ்சல் அனுமதிக்கப்படவில்லை."
 
 msgid "Success! Confirmation Email has been sent."
-msgstr ""
+msgstr "வெற்றி! உறுதிப்படுத்தல் மின்னஞ்சல் அனுப்பப்பட்டது."
 
 msgid "Cannot activate LDAP authentication"
-msgstr ""
+msgstr "LDAP அங்கீகாரத்தை செயல்படுத்த முடியாது"
 
