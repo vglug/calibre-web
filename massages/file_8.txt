@@ -1,14 +1,14 @@
 msgid "Tasks"
-msgstr ""
+msgstr "பணி"
 
 msgid "Waiting"
-msgstr ""
+msgstr "காத்திருக்கிறது"
 
 msgid "Failed"
-msgstr ""
+msgstr "தோல்வியடைந்தது"
 
 msgid "Started"
-msgstr ""
+msgstr "தொடங்கியது"
 
 msgid "Finished"
 msgstr ""
