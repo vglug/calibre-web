@@ -250,14 +250,17 @@ def db_configuration():
         return _db_configuration_update_helper()
     return _db_configuration_result()
 
-
+# Define a route for the admin basic configuration page
 @admi.route("/admin/config", methods=["GET"])
 @user_login_required
 @admin_required
 def configuration():
+    # Render the configuration template, passing in relevant configuration and feature support data
     return render_title_template("config_edit.html",
                                  config=config,
+                                 # OAuth providers
                                  provider=oauthblueprints,
+                                 # Supported features
                                  feature_support=feature_support,
                                  title=_("Basic Configuration"), page="config")
 
