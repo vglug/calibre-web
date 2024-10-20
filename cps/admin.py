@@ -307,7 +307,7 @@ def edit_user_table():
     translations = get_available_locale()
 #Query all users
     all_user = ub.session.query(ub.User)
-#Get all tags associated with books, filtered and ordered
+#Get all tags associated with books, filtered and ordere
     tags = calibre_db.session.query(db.Tags) \
         .join(db.books_tags_link) \
         .join(db.Books) \
@@ -369,30 +369,27 @@ def list_users():
 #Exclude anonymous users if browsing is disabled
     if not config.config_anonbrowse:
         all_user = all_user.filter(ub.User.role.op('&')(constants.ROLE_ANONYMOUS) != constants.ROLE_ANONYMOUS)
-#Get the total number of users
+
     total_count = filtered_count = all_user.count()
-#Filter users based on the search query
+
+
     if search:
         all_user = all_user.filter(or_(func.lower(ub.User.name).ilike("%" + search + "%"),
                                        func.lower(ub.User.kindle_mail).ilike("%" + search + "%"),
                                        func.lower(ub.User.email).ilike("%" + search + "%")))
-#Sort users by state or by the given sort column
+
     if state:
         users = calibre_db.get_checkbox_sorted(all_user.all(), state, off, limit, request.args.get("order", "").lower())
     else:
         users = all_user.order_by(order).offset(off).limit(limit).all()
-#Update the filtered count if a search was done
     if search:
         filtered_count = len(users)
-#Set the default language for each user
     for user in users:
         if user.default_language == "all":
             user.default = _("All")
         else:
             user.default = get_user_locale_language(user.default_language)
-#Prepare the response data
     table_entries = {'totalNotFiltered': total_count, 'total': filtered_count, "rows": users}
- #Return the data as a JSON response
     js_list = json.dumps(table_entries, cls=db.AlchemyEncoder)
     response = make_response(js_list)
     response.headers["Content-Type"] = "application/json; charset=utf-8"
