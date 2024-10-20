@@ -1,32 +1,32 @@
 msgid "Requesting update package"
-msgstr ""
+msgstr "புதுப்பிப்பு தொகுப்பைக் கோருகிறது"
 
 msgid "Downloading update package"
-msgstr ""
+msgstr "புதுப்பிப்பு தொகுப்பைப் பதிவிறக்குகிறது"
 
 msgid "Unzipping update package"
-msgstr ""
+msgstr "புதுப்பிப்பு தொகுப்பை அன்சிப் செய்கிறது"
 
 msgid "Replacing files"
-msgstr ""
+msgstr "கோப்புகளை மாற்றுதல்"
 
 msgid "Database connections are closed"
-msgstr ""
+msgstr "தரவுத்தள இணைப்புகள் மூடப்பட்டுள்ளன"
 
 msgid "Stopping server"
-msgstr ""
+msgstr "சேவையகத்தை நிறுத்துகிறது"
 
 msgid "Update finished, please press okay and reload page"
-msgstr ""
+msgstr "புதுப்பித்தல் முடிந்தது, சரி என்பதை அழுத்தி பக்கத்தை மீண்டும் ஏற்றவும்"
 
 msgid "Update failed:"
-msgstr ""
+msgstr "புதுப்பிப்பு தோல்வியடைந்தது:"
 
 msgid "HTTP Error"
-msgstr ""
+msgstr "HTTP பிழை"
 
 msgid "Connection error"
-msgstr ""
+msgstr "இணைப்பு பிழை"
 
 msgid "Timeout while establishing connection"
 msgstr ""
