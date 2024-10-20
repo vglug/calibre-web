@@ -300,23 +300,31 @@ def view_configuration():
 @user_login_required
 @admin_required
 def edit_user_table():
+#Get visibility settings for editing users
     visibility = current_user.view_settings.get('useredit', {})
+#Get supported languages and translations
     languages = calibre_db.speaking_language()
     translations = get_available_locale()
+#Query all users
     all_user = ub.session.query(ub.User)
+#Get all tags associated with books, filtered and ordered
     tags = calibre_db.session.query(db.Tags) \
         .join(db.books_tags_link) \
         .join(db.Books) \
         .filter(calibre_db.common_filters()) \
         .group_by(text('books_tags_link.tag')) \
         .order_by(db.Tags.name).all()
+#Get custom values if a restricted column is set, otherwise leave empty
     if config.config_restricted_column:
         custom_values = calibre_db.session.query(db.cc_classes[config.config_restricted_column]).all()
     else:
         custom_values = []
+#If anonymous browsing is disabled, exclude anonymous users
     if not config.config_anonbrowse:
         all_user = all_user.filter(ub.User.role.op('&')(constants.ROLE_ANONYMOUS) != constants.ROLE_ANONYMOUS)
+#Check if Kobo sync is enabled
     kobo_support = feature_support['kobo'] and config.config_kobo_sync
+#Render the user table template with all data
     return render_title_template("user_table.html",
                                  users=all_user.all(),
                                  tags=tags,
@@ -335,47 +343,56 @@ def edit_user_table():
 @user_login_required
 @admin_required
 def list_users():
+#Get pagination (offset and limit) from request
     off = int(request.args.get("offset") or 0)
     limit = int(request.args.get("limit") or 10)
+#Get search query, sort column, and sorting order
     search = request.args.get("search")
     sort = request.args.get("sort", "id")
     state = None
+#Handle sorting by 'state'
     if sort == "state":
         state = json.loads(request.args.get("state", "[]"))
     else:
+#Default to sorting by 'id' if the column doesn't exist
         if sort not in ub.User.__table__.columns.keys():
             sort = "id"
+#Get the sort order (ascending or descending)
     order = request.args.get("order", "").lower()
-
+#Set the order for sorting, defaulting to ascending 'id' if no state is provided
     if sort != "state" and order:
         order = text(sort + " " + order)
     elif not state:
         order = ub.User.id.asc()
-
+#Query all users
     all_user = ub.session.query(ub.User)
+#Exclude anonymous users if browsing is disabled
     if not config.config_anonbrowse:
         all_user = all_user.filter(ub.User.role.op('&')(constants.ROLE_ANONYMOUS) != constants.ROLE_ANONYMOUS)
-
+#Get the total number of users
     total_count = filtered_count = all_user.count()
-
+#Filter users based on the search query
     if search:
         all_user = all_user.filter(or_(func.lower(ub.User.name).ilike("%" + search + "%"),
                                        func.lower(ub.User.kindle_mail).ilike("%" + search + "%"),
                                        func.lower(ub.User.email).ilike("%" + search + "%")))
+#Sort users by state or by the given sort column
     if state:
         users = calibre_db.get_checkbox_sorted(all_user.all(), state, off, limit, request.args.get("order", "").lower())
     else:
         users = all_user.order_by(order).offset(off).limit(limit).all()
+#Update the filtered count if a search was done
     if search:
         filtered_count = len(users)
-
+#Set the default language for each user
     for user in users:
         if user.default_language == "all":
             user.default = _("All")
         else:
             user.default = get_user_locale_language(user.default_language)
-
+#Prepare the response data
     table_entries = {'totalNotFiltered': total_count, 'total': filtered_count, "rows": users}
+ #Return the data as a JSON response
     js_list = json.dumps(table_entries, cls=db.AlchemyEncoder)
     response = make_response(js_list)
     response.headers["Content-Type"] = "application/json; charset=utf-8"
