@@ -1,0 +1,120 @@
+msgid "Tasks"
+msgstr "பணி"
+
+msgid "Waiting"
+msgstr "காத்திருக்கிறது"
+
+msgid "Failed"
+msgstr "தோல்வியடைந்தது"
+
+msgid "Started"
+msgstr "தொடங்கியது"
+
+msgid "Finished"
+msgstr "முடிந்தது"
+
+msgid "Ended"
+msgstr "முடிந்தது"
+
+msgid "Cancelled"
+msgstr "ரத்து செய்யப்பட்டது"
+
+msgid "Unknown Status"
+msgstr "தெரியாத நிலை"
+
+msgid "Unexpected data while reading update information"
+msgstr "புதுப்பிப்புத் தகவலைப் படிக்கும்போது எதிர்பாராத தரவு"
+
+msgid "No update available. You already have the latest version installed"
+msgstr "புதுப்பிப்பு இல்லை. நீங்கள் ஏற்கனவே சமீபத்திய பதிப்பை நிறுவியுள்ளீர்கள்"
+
+msgid ""
+msgstr ""
+
+msgid "Could not fetch update information"
+msgstr "புதுப்பிப்புத் தகவலைப் பெற முடியவில்லை"
+
+msgid "Click on the button below to update to the latest stable version."
+msgstr "சமீபத்திய நிலையான பதிப்பிற்கு புதுப்பிக்க கீழே உள்ள பொத்தானைக் கிளிக் செய்யவும்"
+
+msgid ""
+msgstr ""
+
+msgid "No release information available"
+msgstr "வெளியீட்டுத் தகவல் இல்லை"
+
+msgid "Discover (Random Books)"
+msgstr "கண்டுபிடி(சீரற்ற புத்தகங்கள்)"
+
+msgid "Hot Books (Most Downloaded)"
+msgstr "சூடான புத்தகங்கள்(அதிகம் பதிவிறக்கம் செய்யப்பட்டது)"
+
+msgid "Downloaded books by %(user)s"
+msgstr "புத்தகங்களை பதிவிறக்கம் செய்தவர் %(பயனர்)கள்"
+
+msgid "Author: %(name)s"
+msgstr "ஆசிரியர்: %(பெயர்)கள்"
+
+msgid "Publisher: %(name)s"
+msgstr "பதிப்பாளர்: %(பெயர்)கள்"
+
+msgid "Series: %(serie)s"
+msgstr "தொடர்: %(தொடர்)கள்"
+
+msgid "Rating: None"
+msgstr "மதிப்பீடு: இல்லை "
+
+msgid "Rating: %(rating)s stars"
+msgstr ""மதிப்பீடு: %(மதிப்பீடு)கள் நட்சத்திரங்கள்"
+
+msgid "File format: %(format)s"
+msgstr ""கோப்பு வடிவம்: (வடிவம்)கள்"
+
+msgid "Category: %(name)s"
+msgstr "வகை: %(பெயர்)கள்"
+
+msgid "Language: %(name)s"
+msgstr "மொழி: %(பெயர்)கள்"
+
+msgid "Downloads"
+msgstr "பதிவிறக்கங்கள்"
+
+msgid "Ratings list"
+msgstr "மதிப்பீடுகள் பட்டியல்"
+
+msgid "File formats list"
+msgstr "கோப்பு வடிவங்களின் பட்டியல்"
+
+msgid "Please configure the SMTP mail settings first..."
+msgstr "முதலில் SMTP அஞ்சல் அமைப்புகளை உள்ளமைக்கவும்"
+
+msgid "Success! Book queued for sending to %(eReadermail)s"
+msgstr "வெற்றி! புத்தகம் அனுப்ப வரிசையில் நிற்கிறது %(மின் வாசகர் அஞ்சல்)கள் "
+
+msgid "Oops! There was an error sending book: %(res)s"
+msgstr "அச்சச்சோ! புத்தகத்தை அனுப்புவதில் பிழை"
+
+msgid "Oops! Please update your profile with a valid eReader Email."
+msgstr "அச்சச்சோ! சரியான மின் வாசகர் மின்னஞ்சலுடன் உங்கள் சுயவிவரத்தைப் புதுப்பிக்கவும்.""
+
+msgid "Please wait one minute to register next user"
+msgstr "அடுத்த பயனரை பதிவு செய்ய ஒரு நிமிடம் காத்திருக்கவும்""
+
+msgid "Register"
+msgstr "பதிவு"
+
+msgid "Connection error to limiter backend, please contact your administrator"
+msgstr "லிமிட்டர் பின்தளத்தில் இணைப்பு பிழை, உங்கள் நிர்வாகியைத் தொடர்பு கொள்ளவும்"
+
+msgid "Oops! Email server is not configured, please contact your administrator."
+msgstr "அச்சச்சோ! மின்னஞ்சல் சேவையகம் கட்டமைக்கப்படவில்லை, உங்கள் நிர்வாகியைத் தொடர்பு கொள்ளவும்."
+
+msgid "Oops! Your Email is not allowed."
+msgstr "அச்சச்சோ! உங்கள் மின்னஞ்சல் அனுமதிக்கப்படவில்லை."
+
+msgid "Success! Confirmation Email has been sent."
+msgstr "வெற்றி! உறுதிப்படுத்தல் மின்னஞ்சல் அனுப்பப்பட்டது."
+
+msgid "Cannot activate LDAP authentication"
+msgstr "LDAP அங்கீகாரத்தை செயல்படுத்த முடியாது"
+
