@@ -1,120 +1,120 @@
 msgid "Version"
-msgstr ""
+msgstr "பதிப்பு"
 
 msgid "Details"
-msgstr ""
+msgstr "விவரங்கள்"
 
 msgid "Current Version"
-msgstr ""
+msgstr "தற்போதைய பதிப்பு"
 
 msgid "Check for Update"
-msgstr ""
+msgstr "புதுப்பிப்பை சரிபார்க்கவும்"
 
 msgid "Perform Update"
-msgstr ""
+msgstr "புதுப்பிப்பைச் செய்யவும்"
 
 msgid "Are you sure you want to restart?"
-msgstr ""
+msgstr "நிச்சயமாக மீண்டும் தொடங்க விரும்புகிறீர்களா?"
 
 msgid "OK"
-msgstr ""
+msgstr "சரி"
 
 msgid "Cancel"
-msgstr ""
+msgstr "ரத்து செய்"
 
 msgid "Are you sure you want to shutdown?"
-msgstr ""
+msgstr "நிச்சயமாக நிறுத்த வேண்டுமா?"
 
 msgid "Updating, please do not reload this page"
-msgstr ""
+msgstr "புதுப்பிக்கிறது, இந்தப் பக்கத்தை மீண்டும் ஏற்ற வேண்டாம்"
 
 msgid "via"
-msgstr ""
+msgstr "வழியாக"
 
 msgid "In Library"
-msgstr ""
+msgstr "நூலகத்தில்"
 
 msgid "Sort according to book date, newest first"
-msgstr ""
+msgstr "புத்தகத் தேதியின்படி வரிசைப்படுத்தவும், புதியது முதலில்"
 
 msgid "Sort according to book date, oldest first"
-msgstr ""
+msgstr "புத்தகத் தேதியின்படி வரிசைப்படுத்தவும், பழையது முதலில்"
 
 msgid "Sort title in alphabetical order"
-msgstr ""
+msgstr "தலைப்பை அகர வரிசைப்படி வரிசைப்படுத்தவும்"
 
 msgid "Sort title in reverse alphabetical order"
-msgstr ""
+msgstr "தலைப்பை தலைகீழ் அகரவரிசையில் வரிசைப்படுத்தவும்"
 
 msgid "Sort according to publishing date, newest first"
-msgstr ""
+msgstr "வெளியிடும் தேதியின்படி வரிசைப்படுத்தவும், புதியது முதலில்"
 
 msgid "Sort according to publishing date, oldest first"
-msgstr ""
+msgstr "வெளியிடப்பட்ட தேதியின்படி வரிசைப்படுத்தவும், பழையது முதலில்"
 
 msgid "reduce"
-msgstr ""
+msgstr "குறைக்க"
 
 msgid "More by"
-msgstr ""
+msgstr "மேலும் மூலம்"
 
 msgid "Delete Book"
-msgstr ""
+msgstr "புத்தகத்தை நீக்கு"
 
 msgid "Delete formats:"
-msgstr ""
+msgstr "வடிவங்களை நீக்கு:"
 
 msgid "Convert book format:"
-msgstr ""
+msgstr "புத்தக வடிவத்தை மாற்றவும்:"
 
 msgid "Convert from:"
-msgstr ""
+msgstr "இதிலிருந்து மாற்று:"
 
 msgid "select an option"
-msgstr ""
+msgstr "ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்"
 
 msgid "Convert to:"
-msgstr ""
+msgstr "இதற்கு மாற்று:"
 
 msgid "Convert book"
-msgstr ""
+msgstr "புத்தகத்தை மாற்றவும்"
 
 msgid "Uploading..."
-msgstr ""
+msgstr "பதிவேற்றுகிறது..."
 
 msgid "Close"
-msgstr ""
+msgstr "மூடு"
 
 msgid "Error"
-msgstr ""
+msgstr "பிழை"
 
 msgid "Upload done, processing, please wait..."
-msgstr ""
+msgstr "பதிவேற்றம் முடிந்தது, செயலாக்கப்படுகிறது, காத்திருக்கவும்..."
 
 msgid "Upload Format"
-msgstr ""
+msgstr "பதிவேற்ற வடிவம்"
 
 msgid "Book Title"
-msgstr ""
+msgstr "புத்தகத்தின் தலைப்பு"
 
 msgid "Author"
-msgstr ""
+msgstr "ஆசிரியர்"
 
 msgid "Description"
-msgstr ""
+msgstr "விளக்கம்"
 
 msgid "Identifiers"
-msgstr ""
+msgstr "அடையாளங்காட்டிகள்"
 
 msgid "Identifier Type"
-msgstr ""
+msgstr "அடையாளங்காட்டி வகை"
 
 msgid "Identifier Value"
-msgstr ""
+msgstr "அடையாளங்காட்டி மதிப்பு"
 
 msgid "Remove"
-msgstr ""
+msgstr "அகற்று"
 
 msgid "Add Identifier"
-msgstr ""
+msgstr "அடையாளங்காட்டியைச் சேர்க்கவும்"
 
