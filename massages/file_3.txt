@@ -59,34 +59,34 @@ msgid "{} User Successfully Imported"
 msgstr "{} பயனர் வெற்றிகரமாக இறக்குமதி செய்யப்பட்டார்"
 
 msgid "Books path not valid"
-msgstr ""
+msgstr "புத்தக பாதை செல்லாது"
 
 msgid "DB Location is not Valid, Please Enter Correct Path"
-msgstr ""
+msgstr "DB இருப்பிடம் தவறானது, சரியான பாதையை உள்ளிடவும்"
 
 msgid "DB is not Writeable"
-msgstr ""
+msgstr "DB எழுதக்கூடியது அல்ல"
 
 msgid "Keyfile Location is not Valid, Please Enter Correct Path"
-msgstr ""
+msgstr "கீஃபைல் இருப்பிடம் செல்லுபடியாகவில்லை, சரியான பாதையை உள்ளிடவும்"
 
 msgid "Certfile Location is not Valid, Please Enter Correct Path"
-msgstr ""
+msgstr "சான்றிதழ் இருப்பிடம் தவறானது, சரியான பாதையை உள்ளிடவும்"
 
 msgid "Password length has to be between 1 and 40"
-msgstr ""
+msgstr "கடவுச்சொல் நீளம் 1 முதல் 40 வரை இருக்க வேண்டும்"
 
 msgid "Database Settings updated"
-msgstr ""
+msgstr "தரவுத்தள அமைப்புகள் புதுப்பிக்கப்பட்டன"
 
 msgid "Database Configuration"
-msgstr ""
+msgstr "தரவுத்தள கட்டமைப்பு"
 
 msgid "Oops! Please complete all fields."
-msgstr ""
+msgstr "அச்சச்சோ! அனைத்து புலங்களையும் பூர்த்தி செய்யவும்."
 
 msgid "E-mail is not from valid domain"
-msgstr ""
+msgstr "மின்னஞ்சல் செல்லுபடியாகும் டொமைனிலிருந்து இல்லை"
 
 msgid "Add new user"
 msgstr ""
