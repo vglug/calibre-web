@@ -198,35 +198,44 @@ def update_thumbnails():
         helper.update_thumbnail_cache()
     return ""
 
-
+# Define a route for the admin view page that requires user login and admin access
 @admi.route("/admin/view")
 @user_login_required
 @admin_required
 def admin():
+    # Get the current version information from the updater thread
     version = updater_thread.get_current_version_info()
+    # If no version information is available, set the commit as 'Unknown'
     if version is False:
         commit = _('Unknown')
     else:
+        # If version has 'datetime' key, we process it
         if 'datetime' in version:
             commit = version['datetime']
 
             tz = timedelta(seconds=time.timezone if (time.localtime().tm_isdst == 0) else time.altzone)
             form_date = datetime.strptime(commit[:19], "%Y-%m-%dT%H:%M:%S")
+            # Check if the datetime string contains timezone information
             if len(commit) > 19:  # check if string has timezone
+            # If timezone is positive, subtract the offset from the time
                 if commit[19] == '+':
                     form_date -= timedelta(hours=int(commit[20:22]), minutes=int(commit[23:]))
+                # If timezone is negative, add the offset to the time
                 elif commit[19] == '-':
                     form_date += timedelta(hours=int(commit[20:22]), minutes=int(commit[23:]))
+            # Adjust the datetime object with the calculated timezone offset and format it
             commit = format_datetime(form_date - tz, format='short')
         else:
+         # If no 'datetime' is present, use the version information and replace "b" with "Beta"
             commit = version['version'].replace("b", " Beta")
-
+# Query all users from the database
     all_user = ub.session.query(ub.User).all()
     # email_settings = mail_config.get_mail_settings()
     schedule_time = format_time(datetime_time(hour=config.schedule_start_time), format="short")
+    # Calculate the schedule duration based on the configured duration in hours and minutes
     t = timedelta(hours=config.schedule_duration // 60, minutes=config.schedule_duration % 60)
     schedule_duration = format_timedelta(t, threshold=.99)
-
+# Render the admin template with various context variables including users, config, commit, etc
     return render_title_template("admin.html", allUser=all_user, config=config, commit=commit,
                                  feature_support=feature_support, schedule_time=schedule_time,
                                  schedule_duration=schedule_duration,
