@@ -29,34 +29,34 @@ msgid "Connection error"
 msgstr "இணைப்பு பிழை"
 
 msgid "Timeout while establishing connection"
-msgstr ""
+msgstr "இணைப்பை நிறுவும் போது நேரம் முடிந்தது"
 
 msgid "General error"
-msgstr ""
+msgstr "பொதுவான பிழை"
 
 msgid "Update file could not be saved in temp dir"
-msgstr ""
+msgstr "புதுப்பிப்பு கோப்பை தற்காலிக இயக்கத்தில் சேமிக்க முடியவில்லை"
 
 msgid "Files could not be replaced during update"
-msgstr ""
+msgstr "புதுப்பிப்பின் போது கோப்புகளை மாற்ற முடியவில்லை"
 
 msgid "Failed to extract at least One LDAP User"
-msgstr ""
+msgstr "குறைந்தது ஒரு LDAP பயனரைப் பிரித்தெடுக்க முடியவில்லை"
 
 msgid "Failed to Create at Least One LDAP User"
-msgstr ""
+msgstr "குறைந்தது ஒரு LDAP பயனரை உருவாக்க முடியவில்லை"
 
 msgid "Error: %(ldaperror)s"
-msgstr ""
+msgstr "பிழை: %(ldaperror)s"
 
 msgid "Error: No user returned in response of LDAP server"
-msgstr ""
+msgstr "பிழை: LDAP சேவையகத்தின் பதிலில் எந்தப் பயனரும் திரும்பவில்லை"
 
 msgid "At Least One LDAP User Not Found in Database"
-msgstr ""
+msgstr "தரவுத்தளத்தில் குறைந்தது ஒரு LDAP பயனரைக் காணவில்லை"
 
 msgid "{} User Successfully Imported"
-msgstr ""
+msgstr "{} பயனர் வெற்றிகரமாக இறக்குமதி செய்யப்பட்டார்"
 
 msgid "Books path not valid"
 msgstr ""
