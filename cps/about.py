@@ -49,39 +49,54 @@ except Exception:
 modules['SQLite'] = sqlite3.sqlite_version
 sorted_modules = OrderedDict((sorted(modules.items(), key=lambda x: x[0].casefold())))
 
-
+# Function to collect various system and version statistics.
 def collect_stats():
+    # If the NIGHTLY_VERSION constant hasn't been replaced, we're running a stable version.
     if constants.NIGHTLY_VERSION[0] == "$Format:%H$":
+         # Replace 'b' with 'Beta' for the version string.
         calibre_web_version = constants.STABLE_VERSION['version'].replace("b", " Beta")
     else:
+        # If running a nightly build, append nightly build information to the version string.
         calibre_web_version = (constants.STABLE_VERSION['version'].replace("b", " Beta") + ' - '
                                + constants.NIGHTLY_VERSION[0].replace('%', '%%') + ' - '
                                + constants.NIGHTLY_VERSION[1].replace('%', '%%'))
-
+  # If the app is frozen (e.g., packaged as an executable), append "Exe-Version".
     if getattr(sys, 'frozen', False):
         calibre_web_version += " - Exe-Version"
+  # If installed via PyPi, append "pyPi" to the version string.
     elif constants.HOME_CONFIG:
         calibre_web_version += " - pyPi"
-
+# Creating a dictionary to store version information.
     _VERSIONS = {'Calibre Web': calibre_web_version}
     _VERSIONS.update(OrderedDict(
         Python=sys.version,
         Platform='{0[0]} {0[2]} {0[3]} {0[4]} {0[5]}'.format(platform.uname()),
     ))
+   # Adding the version of ImageMagick (used for image manipulation, possibly for eBook covers).
     _VERSIONS.update(uploader.get_magick_version())
+   # Adding the version of the Unrar utility (used to unpack RAR files)
     _VERSIONS['Unrar'] = converter.get_unrar_version()
+   # Adding the version of the Calibre eBook converter (used for eBook format conversions).
     _VERSIONS['Ebook converter'] = converter.get_calibre_version()
+   # Adding the version of Kepubify (used to convert eBooks to Kepub format).
     _VERSIONS['Kepubify'] = converter.get_kepubify_version()
+   # Adding the sorted module information (collected earlier) to the versions dictionary.
     _VERSIONS.update(sorted_modules)
     return _VERSIONS
 
-
+# Defining a route for "/stats", accessible only to logged-in users.
 @about.route("/stats")
 @user_login_required
 def stats():
+    # Counting the total number of books in the database.
     counter = calibre_db.session.query(db.Books).count()
+     # Counting the total number of authors in the database.
     authors = calibre_db.session.query(db.Authors).count()
+    # Counting the total number of categories/tags in the database.
     categories = calibre_db.session.query(db.Tags).count()
+    # Counting the total number of series in the database.
     series = calibre_db.session.query(db.Series).count()
+    # Rendering the 'stats.html' template, passing the collected statistics.
+    # Includes book count, author count, version info, category count, and series count.
     return render_title_template('stats.html', bookcounter=counter, authorcounter=authors, versions=collect_stats(),
                                  categorycounter=categories, seriecounter=series, title=_("Statistics"), page="stat")
