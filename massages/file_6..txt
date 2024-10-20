@@ -1,0 +1,120 @@
+msgid "Unlink to %(oauth)s Failed"
+msgstr "%(auth)sக்கான இணைப்பை நீக்க முடியவில்லை"
+
+msgid "Not Linked to %(oauth)s"
+msgstr "%(auth)s உடன் இணைக்கப்படவில்லை"
+
+msgid "Failed to log in with GitHub."
+msgstr "GitHub உடன் உள்நுழைவதில் தோல்வி"
+
+msgid "Failed to fetch user info from GitHub."
+msgstr "GitHub இலிருந்து பயனர் தகவலைப் பெறுவதில் தோல்வி"
+
+msgid "Failed to log in with Google."
+msgstr "Google இல் உள்நுழைவதில் தோல்வி"
+
+msgid "Failed to fetch user info from Google."
+msgstr "Google இலிருந்து பயனர் தகவலைப் பெறுவதில் தோல்வி"
+
+msgid "GitHub Oauth error, please retry later."
+msgstr "GitHub Oauth பிழை, பிறகு முயற்சிக்கவும்."
+
+msgid "GitHub Oauth error: {}"
+msgstr "GitHub Oauth பிழை: {}"
+
+msgid "Google Oauth error, please retry later."
+msgstr "Google Oauth பிழை, பிறகு முயற்சிக்கவும்"
+
+msgid "Google Oauth error: {}"
+msgstr "Google Oauth பிழை: {"
+
+msgid "{} Stars"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Token not found"
+msgstr ""
+
+msgid "Token has expired"
+msgstr ""
+
+msgid "Success! Please return to your device"
+msgstr ""
+
+msgid "Books"
+msgstr ""
+
+msgid "Show recent books"
+msgstr ""
+
+msgid "Hot Books"
+msgstr ""
+
+msgid "Show Hot Books"
+msgstr ""
+
+msgid "Downloaded Books"
+msgstr ""
+
+msgid "Show Downloaded Books"
+msgstr ""
+
+msgid "Top Rated Books"
+msgstr ""
+
+msgid "Show Top Rated Books"
+msgstr ""
+
+msgid "Read Books"
+msgstr ""
+
+msgid "Show Read and Unread"
+msgstr ""
+
+msgid "Unread Books"
+msgstr ""
+
+msgid "Show unread"
+msgstr ""
+
+msgid "Discover"
+msgstr ""
+
+msgid "Show Random Books"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "Show Category Section"
+msgstr ""
+
+msgid "Series"
+msgstr ""
+
+msgid "Show Series Section"
+msgstr ""
+
+msgid "Authors"
+msgstr ""
+
+msgid "Show Author Section"
+msgstr ""
+
+msgid "Publishers"
+msgstr ""
+
+msgid "Show Publisher Section"
+msgstr ""
+
+msgid "Languages"
+msgstr ""
+
+msgid "Show Language Section"
+msgstr ""
+
+msgid "Ratings"
+msgstr ""
+
