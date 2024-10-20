@@ -1,4 +1,4 @@
-## How to contribute to Calibre-Web
+## How to contribute to Get My Ebooks Web
 
 First of all, we would like to thank you for reading this text. We are happy you are willing to contribute to Calibre-Web.
 
