@@ -1,83 +1,83 @@
 msgid "Unlink to %(oauth)s Failed"
-msgstr ""
+msgstr "%(auth)sக்கான இணைப்பை நீக்க முடியவில்லை"
 
 msgid "Not Linked to %(oauth)s"
-msgstr ""
+msgstr "%(auth)s உடன் இணைக்கப்படவில்லை"
 
 msgid "Failed to log in with GitHub."
-msgstr ""
+msgstr "GitHub உடன் உள்நுழைவதில் தோல்வி"
 
 msgid "Failed to fetch user info from GitHub."
-msgstr ""
+msgstr "GitHub இலிருந்து பயனர் தகவலைப் பெறுவதில் தோல்வி"
 
 msgid "Failed to log in with Google."
-msgstr ""
+msgstr "Google இல் உள்நுழைவதில் தோல்வி"
 
 msgid "Failed to fetch user info from Google."
-msgstr ""
+msgstr "Google இலிருந்து பயனர் தகவலைப் பெறுவதில் தோல்வி"
 
 msgid "GitHub Oauth error, please retry later."
-msgstr ""
+msgstr "GitHub Oauth பிழை, பிறகு முயற்சிக்கவும்."
 
 msgid "GitHub Oauth error: {}"
-msgstr ""
+msgstr "GitHub Oauth பிழை: {}"
 
 msgid "Google Oauth error, please retry later."
-msgstr ""
+msgstr "Google Oauth பிழை, பிறகு முயற்சிக்கவும்"
 
 msgid "Google Oauth error: {}"
-msgstr ""
+msgstr "Google Oauth பிழை: {"
 
 msgid "{} Stars"
-msgstr ""
+msgstr "{} நட்சத்திரங்கள்"
 
 msgid "Login"
-msgstr ""
+msgstr "உள்நுழைக"
 
 msgid "Token not found"
-msgstr ""
+msgstr "டோக்கன் கிடைக்கவில்லை"
 
 msgid "Token has expired"
-msgstr ""
+msgstr "டோக்கன் காலாவதியானது"
 
 msgid "Success! Please return to your device"
-msgstr ""
+msgstr "வெற்றி! உங்கள் சாதனத்திற்குத் திரும்பவும்"
 
 msgid "Books"
-msgstr ""
+msgstr "புத்தகங்கள்"
 
 msgid "Show recent books"
-msgstr ""
+msgstr "சமீபத்திய புத்தகங்களைக் காட்டு"
 
 msgid "Hot Books"
-msgstr ""
+msgstr "சூடான புத்தகங்கள்"
 
 msgid "Show Hot Books"
-msgstr ""
+msgstr "சூடான புத்தகங்களைக் காட்டு"
 
 msgid "Downloaded Books"
-msgstr ""
+msgstr "பதிவிறக்கம் செய்யப்பட்ட புத்தகங்கள்"
 
 msgid "Show Downloaded Books"
-msgstr ""
+msgstr "பதிவிறக்கம் செய்யப்பட்ட புத்தகங்களைக் காட்டு"
 
 msgid "Top Rated Books"
-msgstr ""
+msgstr "சிறந்த தரமதிப்பீடு பெற்ற புத்தகங்கள்"
 
 msgid "Show Top Rated Books"
-msgstr ""
+msgstr "சிறந்த தரமதிப்பீடு பெற்ற புத்தகங்களைக் காட்டு"
 
 msgid "Read Books"
-msgstr ""
+msgstr "புத்தகங்களைப் படியுங்கள்"
 
 msgid "Show Read and Unread"
-msgstr ""
+msgstr "படித்ததையும் படிக்காததையும் காட்டு"
 
 msgid "Unread Books"
-msgstr ""
+msgstr "படிக்காத புத்தகங்கள்"
 
 msgid "Show unread"
-msgstr ""
+msgstr "படிக்காததைக் காட்டு"
 
 msgid "Discover"
 msgstr ""
