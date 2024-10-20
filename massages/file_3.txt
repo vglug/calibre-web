@@ -89,32 +89,32 @@ msgid "E-mail is not from valid domain"
 msgstr "மின்னஞ்சல் செல்லுபடியாகும் டொமைனிலிருந்து இல்லை"
 
 msgid "Add new user"
-msgstr ""
+msgstr "புதிய பயனரைச் சேர்க்கவும்"
 
 msgid "User '%(user)s' created"
-msgstr ""
+msgstr "பயனர் '%(user)is' உருவாக்கப்பட்டது"
 
 msgid "Oops! An account already exists for this Email. or name."
-msgstr ""
+msgstr "அச்சச்சோ! இந்த மின்னஞ்சலுக்கு ஏற்கனவே கணக்கு உள்ளது. அல்லது பெயர்."
 
 msgid "User '%(nick)s' deleted"
-msgstr ""
+msgstr "பயனர் '%(nick)s' நீக்கப்பட்டார்"
 
 msgid "Can't delete Guest User"
-msgstr ""
+msgstr "விருந்தினர் பயனரை நீக்க முடியாது"
 
 msgid "No admin user remaining, can't delete user"
-msgstr ""
+msgstr "நிர்வாகி பயனர் எவரும் இல்லை, பயனரை நீக்க முடியாது"
 
 msgid "Email can't be empty and has to be a valid Email"
-msgstr ""
+msgstr "மின்னஞ்சல் காலியாக இருக்கக்கூடாது மற்றும் சரியான மின்னஞ்சலாக இருக்க வேண்டும்"
 
 msgid "User '%(nick)s' updated"
-msgstr ""
+msgstr "பயனர் '%(nick)s' புதுப்பிக்கப்பட்டது"
 
 msgid "not installed"
-msgstr ""
+msgstr "நிறுவப்படவில்லை"
 
 msgid "Execution permissions missing"
-msgstr ""
+msgstr "செயல்படுத்துவதற்கான அனுமதிகள் இல்லை"
 
