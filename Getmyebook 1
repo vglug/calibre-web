@@ -58,7 +58,7 @@ Calibre-Web is a web app that offers a clean and intuitive interface for browsin
 ## Installation
 
 #### Installation via pip (recommended)
-1. Create a virtual environment for Calibre-Web to avoid conflicts with existing Python dependencies
+1. Create a virtual environment for GetMyEbook to avoid conflicts with existing Python dependencies
 2. Install Calibre-Web via pip: `pip install calibreweb` (or `pip3` depending on your OS/distro)
 3. Install optional features via pip as needed, see [this page](https://github.com/janeczku/calibre-web/wiki/Dependencies-in-Calibre-Web-Linux-and-Windows) for details
 4. Start Calibre-Web by typing `cps`
