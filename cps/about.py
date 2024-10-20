@@ -84,13 +84,19 @@ def collect_stats():
     _VERSIONS.update(sorted_modules)
     return _VERSIONS
 
-
+# Defining a route for "/stats", accessible only to logged-in users.
 @about.route("/stats")
 @user_login_required
 def stats():
+    # Counting the total number of books in the database.
     counter = calibre_db.session.query(db.Books).count()
+     # Counting the total number of authors in the database.
     authors = calibre_db.session.query(db.Authors).count()
+    # Counting the total number of categories/tags in the database.
     categories = calibre_db.session.query(db.Tags).count()
+    # Counting the total number of series in the database.
     series = calibre_db.session.query(db.Series).count()
+    # Rendering the 'stats.html' template, passing the collected statistics.
+    # Includes book count, author count, version info, category count, and series count.
     return render_title_template('stats.html', bookcounter=counter, authorcounter=authors, versions=collect_stats(),
                                  categorycounter=categories, seriecounter=series, title=_("Statistics"), page="stat")
