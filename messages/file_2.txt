@@ -68,53 +68,53 @@ msgid "Add New User"
 msgstr ""
 
 msgid "Edit Email Server Settings"
-msgstr ""
+msgstr "மின்னஞ்சல் சேவையக அமைப்புகளைத் திருத்தவும்"
 
 msgid "Success! Gmail Account Verified."
-msgstr ""
+msgstr "வெற்றி! ஜிமெயில் கணக்கு சரிபார்க்கப்பட்டது."
 
 msgid "Oops! Database Error: %(error)s."
-msgstr ""
+msgstr "அச்சச்சோ! தரவுத்தளப் பிழை: %(பிழை)கள்."
 
 msgid "Test e-mail queued for sending to %(email)s, please check Tasks for result"
-msgstr ""
+msgstr "சோதனை மின்னஞ்சலை %(மின்னஞ்சல்)களுக்கு அனுப்ப வரிசைப்படுத்தப்பட்டுள்ளது, முடிவுக்கான பணிகளைச் சரிபார்க்கவும்"
 
 msgid "There was an error sending the Test e-mail: %(res)s"
-msgstr ""
+msgstr "சோதனை மின்னஞ்சலை அனுப்புவதில் பிழை ஏற்பட்டது: %(res)s"
 
 msgid "Please configure your e-mail address first..."
-msgstr ""
+msgstr "முதலில் உங்கள் மின்னஞ்சல் முகவரியை உள்ளமைக்கவும்..."
 
 msgid "Email Server Settings updated"
-msgstr ""
+msgstr "மின்னஞ்சல் சேவையக அமைப்புகள் புதுப்பிக்கப்பட்டன"
 
 msgid "Edit Scheduled Tasks Settings"
-msgstr ""
+msgstr "திட்டமிடப்பட்ட பணிகளின் அமைப்புகளைத் திருத்தவும்"
 
 msgid "Invalid start time for task specified"
-msgstr ""
+msgstr "குறிப்பிடப்பட்ட பணிக்கான தவறான தொடக்க நேரம்"
 
 msgid "Invalid duration for task specified"
-msgstr ""
+msgstr "குறிப்பிடப்பட்ட பணிக்கான தவறான தொடக்க நேரம்"
 
 msgid "Scheduled tasks settings updated"
-msgstr ""
+msgstr "திட்டமிடப்பட்ட பணிகளின் அமைப்புகள் புதுப்பிக்கப்பட்டன"
 
 msgid "Oops! An unknown error occurred. Please try again later."
-msgstr ""
+msgstr "அச்சச்சோ! அறியப்படாத பிழை ஏற்பட்டது. பிறகு முயற்சிக்கவும்""
 
 msgid "Settings DB is not Writeable"
-msgstr ""
+msgstr "அமைப்புகள் DB எழுதக்கூடியது அல்ல"
 
 msgid "Edit User %(nick)s"
-msgstr ""
+msgstr "பயனர் %(nick)s ஐத் திருத்தவும்"
 
 msgid "Success! Password for user %(user)s reset"
-msgstr ""
+msgstr "வெற்றி! பயனர் %(user)s மீட்டமைப்பிற்கான கடவுச்சொல்"
 
 msgid "Oops! Please configure the SMTP mail settings."
-msgstr ""
+msgstr "அச்சச்சோ! SMTP அஞ்சல் அமைப்புகளை உள்ளமைக்கவும்."
 
 msgid "Logfile viewer"
-msgstr ""
+msgstr "லாக்ஃபைல் வியூவர்"
 
