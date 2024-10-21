@@ -56,7 +56,7 @@ msgid "LDAP User Object Filter Has Unmatched Parenthesis"
 msgstr "LDAP பயனர் பொருள் வடிகட்டி பொருத்தமற்ற அடைப்புக்குறியைக் கொண்டுள்ளது"
 
 msgid "LDAP Member User Filter needs to Have One \"%s\" Format Identifier"
-msgstr ""LDAP குழு பொருள் வடிகட்டி ஒன்று \"%s\" வடிவமைப்பு அடையாளங்காட்டியைக் கொண்டிருக்க வேண்டும்"
+msgstr "LDAP குழு பொருள் வடிகட்டி ஒன்று \"%s\" வடிவமைப்பு அடையாளங்காட்டியைக் கொண்டிருக்க வேண்டும்"
 
 msgid "LDAP Member User Filter Has Unmatched Parenthesis"
 msgstr "LDAP பயனர் பொருள் வடிகட்டி பொருத்தமற்ற அடைப்புக்குறியைக் கொண்டுள்ளது"
@@ -65,7 +65,7 @@ msgid ""
 msgstr ""
 
 msgid "Add New User"
-msgstr "Add New User"
+msgstr "புதிய பயனரைச் சேர்க்கவும்"
 
 msgid "Edit Email Server Settings"
 msgstr "மின்னஞ்சல் சேவையக அமைப்புகளைத் திருத்தவும்"
