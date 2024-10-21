@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 
 msgid "Are you sure you want to change Calibre library location?"
-msgstr ""
+msgstr "காலிபர் லைப்ரரி இருப்பிடத்தை நிச்சயமாக மாற்ற விரும்புகிறீர்களா?"
 
 msgid ""
 msgstr ""
@@ -11,43 +11,43 @@ msgid ""
 msgstr ""
 
 msgid "Deny"
-msgstr ""
+msgstr "மறுக்கவும்"
 
 msgid "Allow"
-msgstr ""
+msgstr ""அனுமதி
 
 msgid "{} sync entries deleted"
-msgstr ""
+msgstr "{} ஒத்திசைவு உள்ளீடுகள் நீக்கப்பட்டன"
 
 msgid "Tag not found"
-msgstr ""
+msgstr "குறி கிடைக்கவில்லை"
 
 msgid "Invalid Action"
-msgstr ""
+msgstr "தவறான செயல்"
 
 msgid "client_secrets.json Is Not Configured For Web Application"
-msgstr ""
+msgstr "client_secrets.json இணைய பயன்பாட்டிற்காக கட்டமைக்கப்படவில்லை"
 
 msgid "Logfile Location is not Valid, Please Enter Correct Path"
-msgstr ""
+msgstr "லாக்ஃபைல் இருப்பிடம் தவறானது, சரியான பாதையை உள்ளிடவும்"
 
 msgid "Access Logfile Location is not Valid, Please Enter Correct Path"
-msgstr ""
+msgstr "அணுகல் லாக்ஃபைல் இருப்பிடம் செல்லுபடியாகாது, சரியான பாதையை உள்ளிடவும்"
 
 msgid "Please Enter a LDAP Provider, Port, DN and User Object Identifier"
-msgstr ""
+msgstr "LDAP வழங்குநர், போர்ட், DN மற்றும் பயனர் பொருள் அடையாளங்காட்டியை உள்ளிடவும்"
 
 msgid "Please Enter a LDAP Service Account and Password"
-msgstr ""
+msgstr "LDAP சேவை கணக்கு மற்றும் கடவுச்சொல்லை உள்ளிடவும்"
 
 msgid "Please Enter a LDAP Service Account"
-msgstr ""
+msgstr "LDAP சேவைக் கணக்கை உள்ளிடவும்"
 
 msgid "LDAP Group Object Filter Needs to Have One \"%s\" Format Identifier"
-msgstr ""
+msgstr "LDAP குழு பொருள் வடிகட்டி ஒன்று \"%s\" வடிவமைப்பு அடையாளங்காட்டியைக் கொண்டிருக்க வேண்டும்"
 
 msgid "LDAP Group Object Filter Has Unmatched Parenthesis"
-msgstr ""
+msgstr ""LDAP குழு பொருள் வடிகட்டி பொருத்தமற்ற அடைப்புக்குறியைக் கொண்டுள்ளது
 
 msgid "LDAP User Object Filter needs to Have One \"%s\" Format Identifier"
 msgstr "LDAP குழு பொருள் வடிகட்டி ஒன்று \"%s\" வடிவமைப்பு அடையாளங்காட்டியைக் கொண்டிருக்க வேண்டும்"
@@ -68,53 +68,53 @@ msgid "Add New User"
 msgstr "புதிய பயனரைச் சேர்க்கவும்"
 
 msgid "Edit Email Server Settings"
-msgstr ""
+msgstr "மின்னஞ்சல் சேவையக அமைப்புகளைத் திருத்தவும்"
 
 msgid "Success! Gmail Account Verified."
-msgstr ""
+msgstr "வெற்றி! ஜிமெயில் கணக்கு சரிபார்க்கப்பட்டது."
 
 msgid "Oops! Database Error: %(error)s."
-msgstr ""
+msgstr "அச்சச்சோ! தரவுத்தளப் பிழை: %(பிழை)கள்."
 
 msgid "Test e-mail queued for sending to %(email)s, please check Tasks for result"
-msgstr ""
+msgstr "சோதனை மின்னஞ்சலை %(மின்னஞ்சல்)களுக்கு அனுப்ப வரிசைப்படுத்தப்பட்டுள்ளது, முடிவுக்கான பணிகளைச் சரிபார்க்கவும்"
 
 msgid "There was an error sending the Test e-mail: %(res)s"
-msgstr ""
+msgstr "சோதனை மின்னஞ்சலை அனுப்புவதில் பிழை ஏற்பட்டது: %(res)s"
 
 msgid "Please configure your e-mail address first..."
-msgstr ""
+msgstr "முதலில் உங்கள் மின்னஞ்சல் முகவரியை உள்ளமைக்கவும்..."
 
 msgid "Email Server Settings updated"
-msgstr ""
+msgstr "மின்னஞ்சல் சேவையக அமைப்புகள் புதுப்பிக்கப்பட்டன"
 
 msgid "Edit Scheduled Tasks Settings"
-msgstr ""
+msgstr "திட்டமிடப்பட்ட பணிகளின் அமைப்புகளைத் திருத்தவும்"
 
 msgid "Invalid start time for task specified"
-msgstr ""
+msgstr "குறிப்பிடப்பட்ட பணிக்கான தவறான தொடக்க நேரம்"
 
 msgid "Invalid duration for task specified"
-msgstr ""
+msgstr "குறிப்பிடப்பட்ட பணிக்கான தவறான கால அளவு"
 
 msgid "Scheduled tasks settings updated"
-msgstr ""
+msgstr "திட்டமிடப்பட்ட பணிகளின் அமைப்புகள் புதுப்பிக்கப்பட்டன"
 
 msgid "Oops! An unknown error occurred. Please try again later."
-msgstr ""
+msgstr "அச்சச்சோ! அறியப்படாத பிழை ஏற்பட்டது. பிறகு முயற்சிக்கவும்""
 
 msgid "Settings DB is not Writeable"
-msgstr ""
+msgstr "அமைப்புகள் DB எழுதக்கூடியது அல்ல"
 
 msgid "Edit User %(nick)s"
-msgstr ""
+msgstr "பயனர் %(nick)s ஐத் திருத்தவும்"
 
 msgid "Success! Password for user %(user)s reset"
-msgstr ""
+msgstr "வெற்றி! பயனர் %(user)s மீட்டமைப்பிற்கான கடவுச்சொல்"
 
 msgid "Oops! Please configure the SMTP mail settings."
-msgstr ""
+msgstr "அச்சச்சோ! SMTP அஞ்சல் அமைப்புகளை உள்ளமைக்கவும்."
 
 msgid "Logfile viewer"
-msgstr ""
+msgstr "லாக்ஃபைல் வியூவர்"
 
