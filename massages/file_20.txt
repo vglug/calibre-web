@@ -59,34 +59,34 @@ msgid "Rating Below"
 msgstr "மதிப்பீடு கீழே"
 
 msgid "From:"
-msgstr ""
+msgstr "இருந்து"
 
 msgid "To:"
-msgstr ""
+msgstr "செய்ய"
 
 msgid "Delete this Shelf"
-msgstr ""
+msgstr "இந்த அலமாரியை நீக்கு"
 
 msgid "Edit Shelf Properties"
-msgstr ""
+msgstr "ஷெல்ஃப் பண்புகளைத் திருத்தவும்"
 
 msgid "Arrange books manually"
-msgstr ""
+msgstr "புத்தகங்களை கைமுறையாக வரிசைப்படுத்துங்கள்"
 
 msgid "Disable Change order"
-msgstr ""
+msgstr "மாற்ற வரிசையை முடக்கு"
 
 msgid "Enable Change order"
-msgstr ""
+msgstr "வரிசையை மாற்றுவதை இயக்கு"
 
 msgid "Sort according to book added to shelf, newest first"
-msgstr ""
+msgstr "அலமாரியில் சேர்க்கப்பட்ட புத்தகத்தின்படி வரிசைப்படுத்தவும், புதியது முதலில்"
 
 msgid "Sort according to book added to shelf, oldest first"
-msgstr ""
+msgstr "அலமாரியில் சேர்க்கப்பட்ட புத்தகத்தின்படி வரிசைப்படுத்தவும், முதலில் பழையது"
 
 msgid "Share with Everyone"
-msgstr ""
+msgstr "அனைவருக்கும் பகிரவும்"
 
 msgid "Sync this shelf with Kobo device"
 msgstr ""
