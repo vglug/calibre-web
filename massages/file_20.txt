@@ -29,34 +29,34 @@ msgid "Published Date To"
 msgstr "வெளியிடப்பட்ட தேதி"
 
 msgid "Any"
-msgstr ""
+msgstr "ஏதேனும்"
 
 msgid "Empty"
-msgstr ""
+msgstr "காலி"
 
 msgid "Exclude Tags"
-msgstr ""
+msgstr "குறிச்சொற்களை விலக்கு"
 
 msgid "Exclude Series"
-msgstr ""
+msgstr "தொடரை விலக்கு"
 
 msgid "Exclude Shelves"
-msgstr ""
+msgstr "அலமாரிகளை விலக்கு"
 
 msgid "Exclude Languages"
-msgstr ""
+msgstr "மொழிகளை விலக்கு"
 
 msgid "Extensions"
-msgstr ""
+msgstr "நீட்டிப்புகள்"
 
 msgid "Exclude Extensions"
-msgstr ""
+msgstr "நீட்டிப்புகளை விலக்கு"
 
 msgid "Rating Above"
-msgstr ""
+msgstr "மதிப்பீடு மேலே"
 
 msgid "Rating Below"
-msgstr ""
+msgstr "மதிப்பீடு கீழே"
 
 msgid "From:"
 msgstr ""
