@@ -14,7 +14,7 @@ msgid "Deny"
 msgstr "மறுக்கவும்"
 
 msgid "Allow"
-msgstr ""
+msgstr ""அனுமதி
 
 msgid "{} sync entries deleted"
 msgstr "{} ஒத்திசைவு உள்ளீடுகள் நீக்கப்பட்டன"
