@@ -89,32 +89,32 @@ msgid "Share with Everyone"
 msgstr "அனைவருக்கும் பகிரவும்"
 
 msgid "Sync this shelf with Kobo device"
-msgstr ""
+msgstr "இந்த அலமாரியை கோபோ சாதனத்துடன் ஒத்திசைக்கவும்"
 
 msgid "Drag to Rearrange Order"
-msgstr ""
+msgstr "வரிசையை மறுசீரமைக்க இழுக்கவும்"
 
 msgid "Hidden Book"
-msgstr ""
+msgstr "மறைக்கப்பட்ட புத்தகம்"
 
 msgid "Library Statistics"
-msgstr ""
+msgstr "நூலக புள்ளிவிவரங்கள்"
 
 msgid "Books in this Library"
-msgstr ""
+msgstr "இந்த நூலகத்தில் உள்ள புத்தகங்கள்"
 
 msgid "Authors in this Library"
-msgstr ""
+msgstr "இந்த நூலகத்தில் உள்ள ஆசிரியர்கள்"
 
 msgid "Categories in this Library"
-msgstr ""
+msgstr "இந்த நூலகத்தில் உள்ள வகைகள்"
 
 msgid "Series in this Library"
-msgstr ""
+msgstr "இந்த நூலகத்தில் உள்ள தொடர்"
 
 msgid "System Statistics"
-msgstr ""
+msgstr "கணினி புள்ளிவிவரங்கள்"
 
 msgid "Program"
-msgstr ""
+msgstr "நிரல்"
 
