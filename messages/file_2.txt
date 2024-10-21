@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 
 msgid "Are you sure you want to change Calibre library location?"
-msgstr ""
+msgstr "காலிபர் லைப்ரரி இருப்பிடத்தை நிச்சயமாக மாற்ற விரும்புகிறீர்களா?"
 
 msgid ""
 msgstr ""
@@ -11,19 +11,19 @@ msgid ""
 msgstr ""
 
 msgid "Deny"
-msgstr ""
+msgstr "மறுக்கவும்"
 
 msgid "Allow"
-msgstr ""
+msgstr ""அனுமதி
 
 msgid "{} sync entries deleted"
-msgstr ""
+msgstr "{} ஒத்திசைவு உள்ளீடுகள் நீக்கப்பட்டன"
 
 msgid "Tag not found"
-msgstr ""
+msgstr "குறி கிடைக்கவில்லை"
 
 msgid "Invalid Action"
-msgstr ""
+msgstr "தவறான செயல்"
 
 msgid "client_secrets.json Is Not Configured For Web Application"
 msgstr ""
