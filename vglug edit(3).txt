@@ -1,0 +1,31 @@
+msgid "Books ordered by Rating"
+msgstr "மதிப்பீட்டின்படி வரிசைப்படுத்தப்பட்ட புத்தகங்கள்"
+
+msgid "Books ordered by file formats"
+msgstr "கோப்பு வடிவங்கள் மூலம் வரிசைப்படுத்தப்பட்ட புத்தகங்கள்"
+
+msgid "Shelves"
+msgstr "அலமாரிகள்"
+
+msgid "Books organized in shelves"
+msgstr "புத்தகங்கள் அலமாரிகளில் ஏற்பாடு செய்யப்பட்டுள்ளன"
+
+msgid "Home"
+msgstr "முகப்பு"
+
+msgid "Toggle Navigation"
+msgstr "வழிசெலுத்தலை மாற்று"
+
+msgid "Search Library"
+msgstr "தேடல் நூலகம்"
+
+msgid "Account"
+msgstr "கணக்கு"
+
+msgid "Logout"
+msgstr "வெளியேறு"
+
+msgid "Settings"
+msgstr "அமைப்புகள்"
+
+
