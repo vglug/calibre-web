@@ -1,32 +1,32 @@
 msgid "Magic Link - Authorise New Device"
-msgstr ""
+msgstr "மேஜிக் இணைப்பு - புதிய சாதனத்தை அங்கீகரிக்கவும்"
 
 msgid "On another device, login and visit:"
-msgstr ""
+msgstr "மற்றொரு சாதனத்தில், உள்நுழைந்து பார்வையிடவும்"
 
 msgid "Once verified, you will automatically be logged in on this device."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டதும், நீங்கள் தானாகவே இந்தச் சாதனத்தில் உள்நுழைவீர்கள்."
 
 msgid "This verification link will expire in 10 minutes."
-msgstr ""
+msgstr "இந்த சரிபார்ப்பு இணைப்பு 10 நிமிடங்களில் காலாவதியாகிவிடும்."
 
 msgid "Generate Series Cover Thumbnails"
-msgstr ""
+msgstr "தொடர் அட்டை சிறு உருவங்களை உருவாக்கவும்"
 
 msgid "No Results Found"
-msgstr ""
+msgstr "முடிவுகள் எதுவும் கிடைக்கவில்லை"
 
 msgid "Search Term:"
-msgstr ""
+msgstr "தேடல் கால"
 
 msgid "Results for:"
-msgstr ""
+msgstr "க்கான முடிவுகள்"
 
 msgid "Published Date From"
-msgstr ""
+msgstr "வெளியிடப்பட்ட தேதி"
 
 msgid "Published Date To"
-msgstr ""
+msgstr "வெளியிடப்பட்ட தேதி"
 
 msgid "Any"
 msgstr ""
