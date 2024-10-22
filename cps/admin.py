@@ -1107,18 +1107,22 @@ def _config_string(to_save, x):
 
 
 def _configuration_gdrive_helper(to_save):
-    gdrive_error = None
+    gdrive_error = None# Variable to store any potential Google Drive related error.
+    # Check if Google Drive configuration is enabled in 'to_save' dictionary.
     if to_save.get("config_use_google_drive"):
-        gdrive_secrets = {}
-
+        gdrive_secrets = {}#Empty dictionary to store Google Drive secrets.
+        # Check if Google Drive settings file exists, disable Google Drive if not found.
         if not os.path.isfile(gdriveutils.SETTINGS_YAML):
             config.config_use_google_drive = False
 
         if gdrive_support:
             gdrive_error = gdriveutils.get_error_text(gdrive_secrets)
+        # Check if Google Drive use is toggled in the configuration and there are no errors.
         if "config_use_google_drive" in to_save and not config.config_use_google_drive and not gdrive_error:
+            # Open and load the Google Drive client secrets from the file.
             with open(gdriveutils.CLIENT_SECRETS, 'r') as settings:
                 gdrive_secrets = json.load(settings)['web']
+            # If the client secrets are missing, return an error message.
             if not gdrive_secrets:
                 return _configuration_result(_('client_secrets.json Is Not Configured For Web Application'))
             gdriveutils.update_settings(
