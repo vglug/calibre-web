@@ -29,28 +29,28 @@ msgid "Google Oauth error: {}"
 msgstr "Google Oauth பிழை: {"
 
 msgid "{} Stars"
-msgstr ""
+msgstr "{} நட்சத்திரங்கள்"
 
 msgid "Login"
-msgstr ""
+msgstr "உள்நுழைக"
 
 msgid "Token not found"
-msgstr ""
+msgstr "டோக்கன் கிடைக்கவில்லை"
 
 msgid "Token has expired"
-msgstr ""
+msgstr "டோக்கன் காலாவதியானது"
 
 msgid "Success! Please return to your device"
-msgstr ""
+msgstr "வெற்றி! உங்கள் சாதனத்திற்குத் திரும்பவும்"
 
 msgid "Books"
-msgstr ""
+msgstr "புத்தகங்கள்"
 
 msgid "Show recent books"
-msgstr ""
+msgstr "சமீபத்திய புத்தகங்களைக் காட்டு"
 
 msgid "Hot Books"
-msgstr ""
+msgstr "சூடான புத்தகங்கள்"
 
 msgid "Show Hot Books"
 msgstr ""
