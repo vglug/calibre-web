@@ -1,120 +1,29 @@
 msgid "Logout User"
-msgstr ""
+msgstr "வெளியேறு பயனர்"
 
 msgid "Sort ascending according to download count"
-msgstr ""
+msgstr "பதிவிறக்க எண்ணிக்கையின்படி ஏறுவரிசையில் வரிசைப்படுத்தவும்"
 
 msgid "Sort descending according to download count"
-msgstr ""
+msgstr "பதிவிறக்க எண்ணிக்கையின்படி இறங்குவரிசையை வரிசைப்படுத்தவும்"
 
 msgid "Sort authors in alphabetical order"
-msgstr ""
+msgstr "ஆசிரியர்களை அகர வரிசைப்படி வரிசைப்படுத்தவும்"
 
 msgid "Sort authors in reverse alphabetical order"
-msgstr ""
+msgstr "ஆசிரியர்களை தலைகீழ் அகரவரிசையில் வரிசைப்படுத்தவும்"
 
 msgid "Sort ascending according to series index"
-msgstr ""
+msgstr "தொடர் குறியீட்டின்படி ஏறுவரிசையில் வரிசைப்படுத்தவும்"
 
 msgid "Sort descending according to series index"
-msgstr ""
+msgstr "தொடர் குறியீட்டின்படி இறங்குமுறையை வரிசைப்படுத்தவும்"
 
 msgid "Start"
-msgstr ""
+msgstr "தொடங்கு"
 
 msgid "Alphabetical Books"
-msgstr ""
+msgstr "அகரவரிசைப் புத்தகங்கள்"
 
 msgid "Books sorted alphabetically"
-msgstr ""
-
-msgid "Popular publications from this catalog based on Downloads."
-msgstr ""
-
-msgid "Popular publications from this catalog based on Rating."
-msgstr ""
-
-msgid "Recently added Books"
-msgstr ""
-
-msgid "The latest Books"
-msgstr ""
-
-msgid "Random Books"
-msgstr ""
-
-msgid "Books ordered by Author"
-msgstr ""
-
-msgid "Books ordered by publisher"
-msgstr ""
-
-msgid "Books ordered by category"
-msgstr ""
-
-msgid "Books ordered by series"
-msgstr ""
-
-msgid "Books ordered by Languages"
-msgstr ""
-
-msgid "Books ordered by Rating"
-msgstr ""
-
-msgid "Books ordered by file formats"
-msgstr ""
-
-msgid "Shelves"
-msgstr ""
-
-msgid "Books organized in shelves"
-msgstr ""
-
-msgid "Home"
-msgstr ""
-
-msgid "Toggle Navigation"
-msgstr ""
-
-msgid "Search Library"
-msgstr ""
-
-msgid "Account"
-msgstr ""
-
-msgid "Logout"
-msgstr ""
-
-msgid "Settings"
-msgstr ""
-
-msgid "Please do not refresh the page"
-msgstr ""
-
-msgid "Browse"
-msgstr ""
-
-msgid "About"
-msgstr ""
-
-msgid "Previous"
-msgstr ""
-
-msgid "Book Details"
-msgstr ""
-
-msgid "Grid"
-msgstr ""
-
-msgid "Archived"
-msgstr ""
-
-msgid "Remember Me"
-msgstr ""
-
-msgid "Forgot Password?"
-msgstr ""
-
-msgid "Log in with Magic Link"
-msgstr ""
-
+msgstr "புத்தகங்கள் அகரவரிசைப்படி வரிசைப்படுத்தப்பட்டுள்ளன"
