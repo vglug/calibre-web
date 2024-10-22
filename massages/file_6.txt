@@ -53,40 +53,40 @@ msgid "Hot Books"
 msgstr "சூடான புத்தகங்கள்"
 
 msgid "Show Hot Books"
-msgstr ""
+msgstr "சூடான புத்தகங்களைக் காட்டு"
 
 msgid "Downloaded Books"
-msgstr ""
+msgstr "பதிவிறக்கம் செய்யப்பட்ட புத்தகங்கள்"
 
 msgid "Show Downloaded Books"
-msgstr ""
+msgstr "பதிவிறக்கம் செய்யப்பட்ட புத்தகங்களைக் காட்டு"
 
 msgid "Top Rated Books"
-msgstr ""
+msgstr "சிறந்த தரமதிப்பீடு பெற்ற புத்தகங்கள்"
 
 msgid "Show Top Rated Books"
-msgstr ""
+msgstr "சிறந்த தரமதிப்பீடு பெற்ற புத்தகங்களைக் காட்டு"
 
 msgid "Read Books"
-msgstr ""
+msgstr "புத்தகங்களைப் படியுங்கள்"
 
 msgid "Show Read and Unread"
-msgstr ""
+msgstr "படித்ததையும் படிக்காததையும் காட்டு"
 
 msgid "Unread Books"
-msgstr ""
+msgstr "படிக்காத புத்தகங்கள்"
 
 msgid "Show unread"
-msgstr ""
+msgstr "படிக்காததைக் காட்டு"
 
 msgid "Discover"
-msgstr ""
+msgstr "கண்டறியவும்"
 
 msgid "Show Random Books"
-msgstr ""
+msgstr "சீரற்ற புத்தகங்களைக் காட்டு"
 
 msgid "Categories"
-msgstr ""
+msgstr "வகைகள்"
 
 msgid "Show Category Section"
 msgstr ""
