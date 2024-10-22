@@ -59,34 +59,34 @@ msgid "Width"
 msgstr "அகலம்"
 
 msgid "Height"
-msgstr ""
+msgstr "உயரம்"
 
 msgid "Native"
-msgstr ""
+msgstr "பூர்வீகம்"
 
 msgid "Rotate"
-msgstr ""
+msgstr "சுழற்று"
 
 msgid "Flip"
-msgstr ""
+msgstr "புரட்டவும்"
 
 msgid "Horizontal"
-msgstr ""
+msgstr "கிடைமட்ட"
 
 msgid "Vertical"
-msgstr ""
+msgstr "செங்குத்து"
 
 msgid "Direction"
-msgstr ""
+msgstr "திசை"
 
 msgid "Left to Right"
-msgstr ""
+msgstr "இடமிருந்து வலம்"
 
 msgid "Right to Left"
-msgstr ""
+msgstr "வலமிருந்து இடமாக"
 
 msgid "Reset to Top"
-msgstr ""
+msgstr "மேலே மீட்டமைக்கவும்"
 
 msgid "Remember Position"
 msgstr ""
