@@ -29,34 +29,34 @@ msgid "Scale to Height"
 msgstr "உயரத்திற்கு அளவுகோல்"
 
 msgid "Scale to Native"
-msgstr ""
+msgstr "பூர்வீகமாக அளவிடவும்"
 
 msgid "Rotate Right"
-msgstr ""
+msgstr "வலதுபுறம் சுழற்று"
 
 msgid "Rotate Left"
-msgstr ""
+msgstr "இடதுபுறம் சுழற்று"
 
 msgid "Flip Image"
-msgstr ""
+msgstr "படத்தை புரட்டவும்"
 
 msgid "Display"
-msgstr ""
+msgstr "காட்சி"
 
 msgid "Single Page"
-msgstr ""
+msgstr "ஒற்றை பக்கம்"
 
 msgid "Long Strip"
-msgstr ""
+msgstr "நீண்ட துண்டு"
 
 msgid "Scale"
-msgstr ""
+msgstr "அளவுகோல்"
 
 msgid "Best"
-msgstr ""
+msgstr "சிறந்த"
 
 msgid "Width"
-msgstr ""
+msgstr "அகலம்"
 
 msgid "Height"
 msgstr ""
