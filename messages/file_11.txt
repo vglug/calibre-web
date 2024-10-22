@@ -89,32 +89,32 @@ msgid "Error"
 msgstr "பிழை"
 
 msgid "Upload done, processing, please wait..."
-msgstr ""
+msgstr "பதிவேற்றம் முடிந்தது, செயலாக்கப்படுகிறது, காத்திருக்கவும்..."
 
 msgid "Upload Format"
-msgstr ""
+msgstr "பதிவேற்ற வடிவம்"
 
 msgid "Book Title"
-msgstr ""
+msgstr "புத்தகத்தின் தலைப்பு"
 
 msgid "Author"
-msgstr ""
+msgstr "ஆசிரியர்"
 
 msgid "Description"
-msgstr ""
+msgstr "விளக்கம்"
 
 msgid "Identifiers"
-msgstr ""
+msgstr "அடையாளங்காட்டிகள்"
 
 msgid "Identifier Type"
-msgstr ""
+msgstr "அடையாளங்காட்டி வகை"
 
 msgid "Identifier Value"
-msgstr ""
+msgstr "அடையாளங்காட்டி மதிப்பு"
 
 msgid "Remove"
-msgstr ""
+msgstr "அகற்று"
 
 msgid "Add Identifier"
-msgstr ""
+msgstr "அடையாளங்காட்டியைச் சேர்க்கவும்"
 
