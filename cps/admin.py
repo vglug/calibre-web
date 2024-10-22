@@ -1125,20 +1125,24 @@ def _configuration_gdrive_helper(to_save):
             # If the client secrets are missing, return an error message.
             if not gdrive_secrets:
                 return _configuration_result(_('client_secrets.json Is Not Configured For Web Application'))
+            # Update Google Drive settings with the client ID, secret, and redirect URI.
             gdriveutils.update_settings(
                 gdrive_secrets['client_id'],
                 gdrive_secrets['client_secret'],
                 gdrive_secrets['redirect_uris'][0]
             )
 
-   
+    # Always show Google Drive settings, but disable support if there's an error.
     new_gdrive_value = (not gdrive_error) and ("config_use_google_drive" in to_save)
+    # If Google Drive was previously enabled but now disabled, clear watch changes response.
     if config.config_use_google_drive and not new_gdrive_value:
         config.config_google_drive_watch_changes_response = {}
+    # Set the new value for Google Drive configuration.
     config.config_use_google_drive = new_gdrive_value
+    # If Google Drive folder configuration has changed, trigger deletion of the database.
     if _config_string(to_save, "config_google_drive_folder"):
         gdriveutils.deleteDatabaseOnChange()
-    return gdrive_error
+    return gdrive_error# Return any Google Drive error that occurred during the process.
 
 
 def _configuration_oauth_helper(to_save):
