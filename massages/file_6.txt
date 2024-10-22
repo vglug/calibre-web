@@ -89,32 +89,32 @@ msgid "Categories"
 msgstr "வகைகள்"
 
 msgid "Show Category Section"
-msgstr ""
+msgstr "வகைப் பிரிவைக் காட்டு"
 
 msgid "Series"
-msgstr ""
+msgstr "தொடர்"
 
 msgid "Show Series Section"
-msgstr ""
+msgstr "தொடர் பகுதியைக் காட்டு"
 
 msgid "Authors"
-msgstr ""
+msgstr "ஆசிரியர்கள்"
 
 msgid "Show Author Section"
-msgstr ""
+msgstr "ஆசிரியர் பகுதியைக் காட்டு"
 
 msgid "Publishers"
-msgstr ""
+msgstr "பதிப்பாளர்கள்"
 
 msgid "Show Publisher Section"
-msgstr ""
+msgstr "வெளியீட்டாளர் பகுதியைக் காட்டு"
 
 msgid "Languages"
-msgstr ""
+msgstr "மொழிகள்"
 
 msgid "Show Language Section"
-msgstr ""
+msgstr "மொழிப் பகுதியைக் காட்டு"
 
 msgid "Ratings"
-msgstr ""
+msgstr "மதிப்பீடுகள்"
 
