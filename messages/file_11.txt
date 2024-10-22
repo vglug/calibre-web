@@ -59,34 +59,34 @@ msgid "More by"
 msgstr "மேலும் மூலம்"
 
 msgid "Delete Book"
-msgstr ""
+msgstr "புத்தகத்தை நீக்கு"
 
 msgid "Delete formats:"
-msgstr ""
+msgstr "வடிவங்களை நீக்கு:"
 
 msgid "Convert book format:"
-msgstr ""
+msgstr "புத்தக வடிவத்தை மாற்றவும்:"
 
 msgid "Convert from:"
-msgstr ""
+msgstr "இதிலிருந்து மாற்று:"
 
 msgid "select an option"
-msgstr ""
+msgstr "ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்"
 
 msgid "Convert to:"
-msgstr ""
+msgstr "இதற்கு மாற்று:"
 
 msgid "Convert book"
-msgstr ""
+msgstr "புத்தகத்தை மாற்றவும்"
 
 msgid "Uploading..."
-msgstr ""
+msgstr "பதிவேற்றுகிறது..."
 
 msgid "Close"
-msgstr ""
+msgstr "மூடு"
 
 msgid "Error"
-msgstr ""
+msgstr "பிழை"
 
 msgid "Upload done, processing, please wait..."
 msgstr ""
