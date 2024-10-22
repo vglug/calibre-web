@@ -1,32 +1,32 @@
 msgid "One column"
-msgstr ""
+msgstr "ஒரு நெடுவரிசை"
 
 msgid "Comic Reader"
-msgstr ""
+msgstr "நகைச்சுவை வாசகர்"
 
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
 
 msgid "Previous Page"
-msgstr ""
+msgstr "முந்தைய பக்கம்"
 
 msgid "Next Page"
-msgstr ""
+msgstr "அடுத்த பக்கம்"
 
 msgid "Single Page Display"
-msgstr ""
+msgstr "ஒற்றைப் பக்கக் காட்சி"
 
 msgid "Long Strip Display"
-msgstr ""
+msgstr "நீண்ட துண்டு காட்சி"
 
 msgid "Scale to Best"
-msgstr ""
+msgstr "சிறந்ததாக அளவிடவும்"
 
 msgid "Scale to Width"
-msgstr ""
+msgstr "அகலத்திற்கு அளவிடவும்"
 
 msgid "Scale to Height"
-msgstr ""
+msgstr "உயரத்திற்கு அளவுகோல்"
 
 msgid "Scale to Native"
 msgstr ""
