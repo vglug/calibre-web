@@ -29,92 +29,92 @@ msgid "Google Oauth error: {}"
 msgstr "Google Oauth பிழை: {"
 
 msgid "{} Stars"
-msgstr "{} நட்சத்திரங்கள்"
+msgstr ""
 
 msgid "Login"
-msgstr "உள்நுழைக"
+msgstr ""
 
 msgid "Token not found"
-msgstr "டோக்கன் கிடைக்கவில்லை"
+msgstr ""
 
 msgid "Token has expired"
-msgstr "டோக்கன் காலாவதியானது"
+msgstr ""
 
 msgid "Success! Please return to your device"
-msgstr "வெற்றி! உங்கள் சாதனத்திற்குத் திரும்பவும்"
+msgstr ""
 
 msgid "Books"
-msgstr "புத்தகங்கள்"
+msgstr ""
 
 msgid "Show recent books"
-msgstr "சமீபத்திய புத்தகங்களைக் காட்டு"
+msgstr ""
 
 msgid "Hot Books"
-msgstr "சூடான புத்தகங்கள்"
+msgstr ""
 
 msgid "Show Hot Books"
-msgstr "சூடான புத்தகங்களைக் காட்டு"
+msgstr ""
 
 msgid "Downloaded Books"
-msgstr "பதிவிறக்கம் செய்யப்பட்ட புத்தகங்கள்"
+msgstr ""
 
 msgid "Show Downloaded Books"
-msgstr "பதிவிறக்கம் செய்யப்பட்ட புத்தகங்களைக் காட்டு"
+msgstr ""
 
 msgid "Top Rated Books"
-msgstr "சிறந்த தரமதிப்பீடு பெற்ற புத்தகங்கள்"
+msgstr ""
 
 msgid "Show Top Rated Books"
-msgstr "சிறந்த தரமதிப்பீடு பெற்ற புத்தகங்களைக் காட்டு"
+msgstr ""
 
 msgid "Read Books"
-msgstr "புத்தகங்களைப் படியுங்கள்"
+msgstr ""
 
 msgid "Show Read and Unread"
-msgstr "படித்ததையும் படிக்காததையும் காட்டு"
+msgstr ""
 
 msgid "Unread Books"
-msgstr "படிக்காத புத்தகங்கள்"
+msgstr ""
 
 msgid "Show unread"
-msgstr "படிக்காததைக் காட்டு"
+msgstr ""
 
 msgid "Discover"
-msgstr "கண்டறியவும்"
+msgstr ""
 
 msgid "Show Random Books"
-msgstr "சீரற்ற புத்தகங்களைக் காட்டு"
+msgstr ""
 
 msgid "Categories"
-msgstr "வகைகள்"
+msgstr ""
 
 msgid "Show Category Section"
-msgstr "வகைப் பிரிவைக் காட்டு"
+msgstr ""
 
 msgid "Series"
-msgstr "தொடர்"
+msgstr ""
 
 msgid "Show Series Section"
-msgstr "தொடர் பகுதியைக் காட்டு"
+msgstr ""
 
 msgid "Authors"
-msgstr "ஆசிரியர்கள்"
+msgstr ""
 
 msgid "Show Author Section"
-msgstr "ஆசிரியர் பகுதியைக் காட்டு"
+msgstr ""
 
 msgid "Publishers"
-msgstr "பதிப்பாளர்கள்"
+msgstr ""
 
 msgid "Show Publisher Section"
-msgstr "வெளியீட்டாளர் பகுதியைக் காட்டு"
+msgstr ""
 
 msgid "Languages"
-msgstr "மொழிகள்"
+msgstr ""
 
 msgid "Show Language Section"
-msgstr "மொழிப் பகுதியைக் காட்டு"
+msgstr ""
 
 msgid "Ratings"
-msgstr "மதிப்பீடுகள்"
+msgstr ""
 
