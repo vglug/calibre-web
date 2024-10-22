@@ -1100,9 +1100,9 @@ def _config_checkbox_int(to_save, x):
     #Replace on and of or other values to test the behavior
     return config.set_from_dictionary(to_save, x, lambda y: 1 if (y == "on") else 0, 0)
 
- 
+  #This function will  call provided dictionary(to_save) and string (x)
 def _config_string(to_save, x):
-    
+    #It run the function to strip whitespaces from the string
     return config.set_from_dictionary(to_save, x, lambda y: strip_whitespaces(y) if y else y)
 
 
