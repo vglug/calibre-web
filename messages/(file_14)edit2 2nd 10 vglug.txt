@@ -1,0 +1,29 @@
+msgid "LDAP Encryption"
+msgstr "LDAP குறியாக்கம்"
+
+msgid "TLS"
+msgstr "TLS"
+
+msgid "SSL"
+msgstr "SSL"
+
+msgid ""
+msgstr ""
+
+msgid "LDAP Certificate Path (Only needed for Client Certificate Authentication)"
+msgstr "LDAP சான்றிதழ் பாதை (வாடிக்கையாளர் சான்றிதழ் அங்கீகாரத்திற்கு மட்டுமே தேவை)"
+
+msgid "LDAP Keyfile Path (Only needed for Client Certificate Authentication)"
+msgstr "LDAP Keyfile Path (வாடிக்கையாளர் சான்றிதழ் அங்கீகாரத்திற்கு மட்டுமே தேவை)"
+
+msgid "LDAP Authentication"
+msgstr "LDAP அங்கீகாரம்"
+
+msgid "Anonymous"
+msgstr "அநாமதேய"
+
+msgid "Unauthenticated"
+msgstr "அங்கீகரிக்கப்படாதது"
+
+msgid "Simple"
+msgstr "எளிமையானது"
