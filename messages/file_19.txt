@@ -89,32 +89,33 @@ msgid "Reset to Top"
 msgstr "மேலே மீட்டமைக்கவும்"
 
 msgid "Remember Position"
-msgstr ""
+msgstr "நிலையை நினைவில் கொள்ளுங்கள்"
 
 msgid "Scrollbar"
-msgstr ""
+msgstr "சுருள் பட்டை"
 
 msgid "Show"
-msgstr ""
+msgstr "காட்டு"
 
 msgid "Hide"
-msgstr ""
+msgstr "மறை"
 
 msgid "DJVU Reader"
-msgstr ""
+msgstr "DJVU வாசகர்"
 
 msgid "PDF Reader"
-msgstr ""
+msgstr "கையடக்க ஆவண வடிமைப்பு வாசகர்"
 
 msgid "txt Reader"
-msgstr ""
+msgstr "உரை கோப்புகள் வாசகர்"
 
 msgid "Register New Account"
-msgstr ""
+msgstr "புதிய கணக்கை பதிவு செய்யவும்"
+
 
 msgid "Choose a username"
-msgstr ""
+msgstr "பயனர்பெயரை தேர்வு செய்யவும்"
 
 msgid "Your Email"
-msgstr ""
+msgstr "உங்கள் மின்னஞ்சல்"
 
