@@ -1,0 +1,29 @@
+msgid "LDAP Administrator Password"
+msgstr ""LDAP நிர்வாகி கடவுச்சொல்"
+
+msgid "LDAP Distinguished Name (DN)"
+msgstr "LDAP சிறப்புப் பெயர் (DN)"
+
+msgid "LDAP User Object Filter"
+msgstr "LDAP பயனர் பொருள் வடிகட்டி"
+
+msgid "LDAP Server is OpenLDAP?"
+msgstr "LDAP சேவையகம் OpenLDAP?"
+
+msgid "Following Settings are Needed For User Import"
+msgstr "பயனர் இறக்குமதிக்கு பின்வரும் அமைப்புகள் தேவை"
+
+msgid "LDAP Group Object Filter"
+msgstr "LDAP குழு பொருள் வடிகட்டி"
+
+msgid "LDAP Group Name"
+msgstr "LDAP குழுவின் பெயர்"
+
+msgid "LDAP Group Members Field"
+msgstr "LDAP குழு உறுப்பினர்கள் களம்"
+
+msgid "LDAP Member User Filter Detection"
+msgstr "LDAP உறுப்பினர் பயனர் வடிகட்டி கண்டறிதல்"
+
+msgid "Autodetect"
+msgstr "தானாகக் கண்டறிதல்"
