@@ -1,0 +1,29 @@
+msgid "Autodetect"
+msgstr "தானாகக் கண்டறிதல்"
+
+msgid "Custom Filter"
+msgstr "தனிப்பயன் வடிகட்டி"
+
+msgid "LDAP Member User Filter"
+msgstr "LDAP உறுப்பினர் பயனர் வடிகட்டி"
+
+msgid "Obtain %(provider)s OAuth Credential"
+msgstr "% (வழங்குபவர்கள் OAuth நற்சான்றிதழ்கள்) பெறவும்"
+
+msgid "%(provider)s OAuth Client Id"
+msgstr "%(வழங்குபவர்)s OAuth கிளையண்ட் ஐடி"
+
+msgid "%(provider)s OAuth Client Secret"
+msgstr "%(வழங்குபவர்)s OAuth கிளையண்ட் ரகசியம்"
+
+msgid "External binaries"
+msgstr "வெளிப்புற பைனரிகள்"
+
+msgid "Path to Calibre Binaries"
+msgstr "காலிபர் பைனரிகளுக்கான பாதை"
+
+msgid "Calibre E-Book Converter Settings"
+msgstr "காலிபர் மின் புத்தக மாற்றி அமைப்புகள்"
+
+msgid "Path to Kepubify E-Book Converter"
+msgstr "Kepubify மின் புத்தக மாற்றிக்கான பாதை"
