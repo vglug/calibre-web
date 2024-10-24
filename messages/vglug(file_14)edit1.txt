@@ -1,0 +1,29 @@
+msgid "Server External Port (for port forwarded API calls)"
+msgstr "சர்வர் எக்ஸ்டர்னல் போர்ட் (போர்ட் ஃபார்வர்டு செய்யப்பட்ட API அழைப்புகளுக்கு)"
+
+msgid "Use Goodreads"
+msgstr "Goodreads பயன்படுத்தவும்"
+
+msgid "Goodreads API Key"
+msgstr "Goodreads API விசை"
+
+msgid "Allow Reverse Proxy Authentication"
+msgstr "ரிவர்ஸ் ப்ராக்ஸி அங்கீகாரத்தை அனுமதிக்கவும்"
+
+msgid "Login type"
+msgstr "உள்நுழைவு வகை"
+
+msgid "Use Standard Authentication"
+msgstr "நிலையான அங்கீகாரத்தைப் பயன்படுத்தவும்"
+
+msgid "Use LDAP Authentication"
+msgstr "LDAP அங்கீகாரத்தைப் பயன்படுத்தவும்"
+
+msgid "Use OAuth"
+msgstr "OAuth ஐப் பயன்படுத்தவும்"
+
+msgid "LDAP Server Host Name or IP Address"
+msgstr "LDAP சர்வர் ஹோஸ்ட் பெயர் அல்லது IP முகவரி"
+
+msgid "LDAP Server Port"
+msgstr "LDAP சர்வர் போர்ட்"
