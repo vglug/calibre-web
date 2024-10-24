@@ -1288,9 +1288,13 @@ def edit_mailsettings():
 @admi.route("/admin/mailsettings", methods=["POST"])
 @user_login_required
 @admin_required
+#The mail setting can be used to collect the mail information
+#The function will be return edit mail setting object
+#The mail will be config the mail
 def update_mailsettings():
     to_save = request.form.to_dict()
     _config_int(to_save, "mail_server_type")
+#If statements contains the parameter value is invaliate
     if to_save.get("invalidate"):
         config.mail_gmail_token = {}
         try:
@@ -1305,6 +1309,11 @@ def update_mailsettings():
             flash(str(ex), category="error")
             log.error(ex)
             return edit_mailsettings()
+#The else statements using the parameter is to save mail use port and mail use ssl
+#The mail server is config the mail server equal to strip whitespaces to_save.get('mail_server')
+#The mail from is config the mail is equal to strip whitespaces (to_save.get('mail_from', ""))
+#The mail login is config the mail is equal to strip whitespaces (to_save.get('mail_login', ""))
+# The if and else can return the value is edit mail setting
 
     else:
         _config_int(to_save, "mail_port")
